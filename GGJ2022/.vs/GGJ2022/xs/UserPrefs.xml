@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{930A84BE-E3F0-B3AC-1FB4-21DCE9D2AEF2}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/follower.cs">
+    <Files>
+      <File FileName="Assets/Scripts/follower.cs" Line="13" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GGJ2022" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="follower.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3194bb00-d99a-4062-9a79-319a79d8e5c2" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
