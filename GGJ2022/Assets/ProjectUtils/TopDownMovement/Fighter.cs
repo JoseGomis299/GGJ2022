@@ -14,7 +14,6 @@ namespace ProjectUtils.TopDown2D
     private float _lastImmune;
 
     protected Vector3 pushDirection;
-    protected Vector3 dashDirection;
 
     public void ReceiveDamage(Damage dmg)
     {
