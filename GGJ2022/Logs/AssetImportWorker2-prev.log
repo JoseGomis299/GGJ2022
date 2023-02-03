@@ -315,3 +315,27 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 207.211269 seconds.
+  path: Assets/ProjectUtils/TopDownMovement/Atacking
+  artifactKey: Guid(996e8278906aefa45b18e00accea66c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectUtils/TopDownMovement/Atacking using Guid(996e8278906aefa45b18e00accea66c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bef00778b260f8615c194bb70068c2') in 0.015139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.066395 seconds.
+  path: Assets/ProjectUtils/TopDownMovement/Atacking/MeleeAttack.cs
+  artifactKey: Guid(b605b4c78625e7249b1924f8c90dddfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectUtils/TopDownMovement/Atacking/MeleeAttack.cs using Guid(b605b4c78625e7249b1924f8c90dddfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19659ccdef27d72ec9ca0ae03f03adb9') in 0.007475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.032856 seconds.
+  path: Assets/ProjectUtils/TopDownMovement/Atacking/Damage.cs
+  artifactKey: Guid(8424d3e3885ecd24587f64b2668d28d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectUtils/TopDownMovement/Atacking/Damage.cs using Guid(8424d3e3885ecd24587f64b2668d28d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade8d7930bc41d9f05fcc55dce13c754') in 0.006011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.975637 seconds.
+  path: Assets/ProjectUtils/TopDownMovement/Atacking/RangedAttack.cs
+  artifactKey: Guid(c4a1e532ee9f9a64ab1d524f8d326630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectUtils/TopDownMovement/Atacking/RangedAttack.cs using Guid(c4a1e532ee9f9a64ab1d524f8d326630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25429cf6d721103096254cb1f44ca2bf') in 0.005966 seconds 
