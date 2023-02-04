@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bb881d90ac162724caf585439310ab3d
+guid: c5de72c6bf9563a48b6d4fdc8651cf0c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -153,7 +153,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rock%20tile%20map%201_0
+      name: rock%20tile%20map%201 (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -167,14 +167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 743c703186311914b97da6c6d81c8865
-      internalID: 1018767057
+      spriteID: 7f179a5fc950e2643aed4a82f6428df0
+      internalID: 350555015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_1
+      name: rock%20tile%20map%201 (1)_1
       rect:
         serializedVersion: 2
         x: 512
@@ -188,14 +188,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7ddce6ae65bb1c43925329e3f6fba9c
-      internalID: 425699904
+      spriteID: 2ee45ccb63bb1a0469467ba0874713c7
+      internalID: 1828440762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_2
+      name: rock%20tile%20map%201 (1)_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -209,14 +209,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea75de32fe72d17438d11d567705e971
-      internalID: 148992729
+      spriteID: aad448d842c2f97468535dd3e00b338d
+      internalID: 392418726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_3
+      name: rock%20tile%20map%201 (1)_3
       rect:
         serializedVersion: 2
         x: 0
@@ -230,14 +230,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87aef40fd4721bd4eb2f91ef000807f6
-      internalID: 1532681251
+      spriteID: bb224651482d8204e8578a76ec328465
+      internalID: -282953165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_4
+      name: rock%20tile%20map%201 (1)_4
       rect:
         serializedVersion: 2
         x: 512
@@ -251,14 +251,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b11b0a83f4fea874897951cb6779858f
-      internalID: -842544546
+      spriteID: 92ce7e4c48bfe3f429898b03c73c2236
+      internalID: 574707839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_5
+      name: rock%20tile%20map%201 (1)_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -272,14 +272,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bedb6f45f81c4de459806d3c9bd53749
-      internalID: -1495184568
+      spriteID: 4d09e2be5b3c497419388063a9e9f50a
+      internalID: -1708856026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_6
+      name: rock%20tile%20map%201 (1)_6
       rect:
         serializedVersion: 2
         x: 0
@@ -293,14 +293,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e8b6335dac81874f9700767425f889d
-      internalID: 1784981312
+      spriteID: 591067ee41ad894428fe839783b4174a
+      internalID: 1691859679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_7
+      name: rock%20tile%20map%201 (1)_7
       rect:
         serializedVersion: 2
         x: 512
@@ -314,14 +314,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7057576c16a138c47ac1a84ad5cd3ef9
-      internalID: -875562228
+      spriteID: 9435a20ecc4290a4fb2ca717090f6527
+      internalID: 1793387074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_8
+      name: rock%20tile%20map%201 (1)_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -335,14 +335,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1622a1207d182d4f917b7d41e0d7945
-      internalID: -472190247
+      spriteID: c3e4bc429f3036545864f2f8af8ea5b9
+      internalID: -1665174498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_9
+      name: rock%20tile%20map%201 (1)_9
       rect:
         serializedVersion: 2
         x: 0
@@ -356,14 +356,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09569de19a295f84b940767e8007eed6
-      internalID: 598417070
+      spriteID: 9c37060e38d694e4aa83becb7ad274ab
+      internalID: -1181076317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_10
+      name: rock%20tile%20map%201 (1)_10
       rect:
         serializedVersion: 2
         x: 512
@@ -377,14 +377,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d6346f287bc8914195e1f9c082e76d8
-      internalID: -118135943
+      spriteID: 415c78c848f9dde4f876acd063075cb7
+      internalID: -644158091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock%20tile%20map%201_11
+      name: rock%20tile%20map%201 (1)_11
       rect:
         serializedVersion: 2
         x: 1024
@@ -398,8 +398,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1523ba91c8710548b92cfa8ba6b812a
-      internalID: 315360321
+      spriteID: a23d40cc0bbc95e4cbd560f35fc7c291
+      internalID: -2143591637
       vertices: []
       indices: 
       edges: []
@@ -415,18 +415,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rock%20tile%20map%201_7: -875562228
-      rock%20tile%20map%201_4: -842544546
-      rock%20tile%20map%201_1: 425699904
-      rock%20tile%20map%201_8: -472190247
-      rock%20tile%20map%201_5: -1495184568
-      rock%20tile%20map%201_10: -118135943
-      rock%20tile%20map%201_0: 1018767057
-      rock%20tile%20map%201_2: 148992729
-      rock%20tile%20map%201_3: 1532681251
-      rock%20tile%20map%201_9: 598417070
-      rock%20tile%20map%201_11: 315360321
-      rock%20tile%20map%201_6: 1784981312
+      rock%20tile%20map%201 (1)_4: 574707839
+      rock%20tile%20map%201 (1)_1: 1828440762
+      rock%20tile%20map%201 (1)_5: -1708856026
+      rock%20tile%20map%201 (1)_3: -282953165
+      rock%20tile%20map%201 (1)_8: -1665174498
+      rock%20tile%20map%201 (1)_0: 350555015
+      rock%20tile%20map%201 (1)_2: 392418726
+      rock%20tile%20map%201 (1)_11: -2143591637
+      rock%20tile%20map%201 (1)_7: 1793387074
+      rock%20tile%20map%201 (1)_10: -644158091
+      rock%20tile%20map%201 (1)_6: 1691859679
+      rock%20tile%20map%201 (1)_9: -1181076317
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
