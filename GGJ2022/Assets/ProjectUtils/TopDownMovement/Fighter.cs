@@ -6,8 +6,8 @@ namespace ProjectUtils.TopDown2D
 {
   public class Fighter : MonoBehaviour, IDamageable
   {
-    public int health = 10;
-    public int maxHealth = 10;
+    public float health = 10;
+    public float maxHealth = 10;
     public float pushRecoverySpeed = 1;
 
     [SerializeField] private float immuneTime = 1;
@@ -18,8 +18,10 @@ namespace ProjectUtils.TopDown2D
 
     public void ReceiveDamage(Damage dmg)
     {
+
       if (Time.time - _lastImmune > immuneTime)
       {
+               
         _lastImmune = Time.time;
         health -= dmg.damageAmount;
         pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
@@ -27,10 +29,8 @@ namespace ProjectUtils.TopDown2D
         if (health <= 0)
         {
           health = 0;
-          Death();
-        }
+u        }
 
-        StartCoroutine(ImmuneDisplay());
       }
     }
 
