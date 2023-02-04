@@ -4,7 +4,7 @@ using UnityEngine;
     {
         private Vector3 _direction;
         private Vector3 _lastValidDirection;
-
+        [Header("Cooldown")]
         [SerializeField] private float dashCoolDown;
         private float _lastDashTime;
 
