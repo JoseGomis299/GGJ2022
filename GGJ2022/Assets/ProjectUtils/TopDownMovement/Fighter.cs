@@ -6,9 +6,9 @@ namespace ProjectUtils.TopDown2D
 {
   public class Fighter : MonoBehaviour, IDamageable
   {
+    [Header("Fighting")]
     public int health = 10;
     public int maxHealth = 10;
-    public float pushRecoverySpeed = 1;
 
     [SerializeField] private float immuneTime = 1;
     private float _lastImmune;
