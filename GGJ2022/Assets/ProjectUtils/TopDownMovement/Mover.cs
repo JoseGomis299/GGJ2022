@@ -6,70 +6,96 @@ namespace ProjectUtils.TopDown2D
 {
     public abstract class Mover : Fighter
     {
-        private Vector3 _moveDelta;
+        [Header("Movement")]
         [SerializeField] protected float speed = 4;
+        [SerializeField] protected float airControl = 0.5f;
         [SerializeField] private LayerMask collisionLayer;
-        [SerializeField] private GameObject moverDisplay;
-        private Rigidbody2D rb;
+        private Vector3 _moveDelta;
+        private Rigidbody2D _rb;
         private RaycastHit2D _hit;
+        
+        [Header("Attacking")]
         protected MeleeAttack meleeAttack;
         protected RangedAttack rangedAttack;
         
         protected Vector3 dashDirection;
 
-        [SerializeField]protected float jumpForce;
-       private float coyoteTime;
-        private float jumpBufferTime;
-
-        [SerializeField]  private bool grounded;
-
+        [Header("Jumping")]
+        [SerializeField] protected float jumpForce;
+        private float _coyoteTime;
+        private float _jumpBufferTime;
+        protected bool grounded;
+        
         private BoxCollider2D _boxCollider;
+        private float _climbingDirection;
 
-        protected virtual void Start()
+        protected void Start()
         {
             if (TryGetComponent(out MeleeAttack meleeAttack)) this.meleeAttack = meleeAttack;
             if (TryGetComponent(out RangedAttack rangedAttack)) this.rangedAttack = rangedAttack;
 
             _boxCollider = gameObject.GetComponent<BoxCollider2D>();
-            rb = GetComponent<Rigidbody2D>();
-            jumpBufferTime = float.MinValue;
+            _rb = GetComponent<Rigidbody2D>();
+            _jumpBufferTime = float.MinValue;
         }
 
-        protected virtual void UpdateMotor(Vector3 input)
+        protected void UpdateMotor(Vector3 input)
         {
-            _moveDelta = new Vector3(input.x * speed, rb.velocity.y, 0);
+            _moveDelta = new Vector3(input.x * speed, _rb.velocity.y, 0);
 
             if (_moveDelta.x < 0)
             {
-                moverDisplay.transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(-1, 1, 1);
             }
             else if (_moveDelta.x > 0)
             {
-                moverDisplay.transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(1, 1, 1);
             }
 
             //Pushes mover if gets hit or dashes
-            _moveDelta += pushDirection;
-            _moveDelta += dashDirection;
+            _moveDelta += pushDirection + dashDirection;
             //Lerps push and dash to 0
-            pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);
+            pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, Time.fixedDeltaTime / 0.1f);
             dashDirection = Vector3.Lerp(dashDirection, Vector3.zero, Time.fixedDeltaTime / 0.075f);
 
-            if (Physics2D.Raycast(transform.position, Vector2.down, transform.localScale.y / 2 + 0.1f, collisionLayer) )
+            //Check if grounded
+            if (Physics2D.BoxCast(transform.position, _boxCollider.size,0,Vector2.down, 0.1f, collisionLayer) )
             {
                 grounded = true;
-                if (rb.velocity.y <= 0) coyoteTime = Time.time;
+                if (_rb.velocity.y <= 0) _coyoteTime = Time.time;
             }
             else
             {
                 grounded = false;
             }
-            
-            if (!Physics2D.BoxCast(transform.position, _boxCollider.size, 0, new Vector2(_moveDelta.x, 0),
-                    Mathf.Abs(_moveDelta.x * Time.fixedDeltaTime), collisionLayer))
-                rb.velocity = _moveDelta;
 
-            if(Time.time - jumpBufferTime < 0.1f && grounded) Jump(jumpForce);
+            //Check if colliding with wall
+            RaycastHit2D hit = Physics2D.BoxCast(transform.position, _boxCollider.size, 0, new Vector2(input.x, 0),
+                Mathf.Abs(input.x * speed* Time.fixedDeltaTime), collisionLayer);
+            if (hit == false)
+            {
+                Vector3 targetVelocity = grounded ? _moveDelta : Vector2.Lerp(_rb.velocity, _moveDelta, Time.deltaTime * 20f * airControl);
+                _rb.velocity = (Vector2)targetVelocity;
+                if (_climbingDirection != 0)
+                {
+                    _climbingDirection = 0;
+                }
+            }
+            else
+            {
+                if (hit.transform.CompareTag("Climbable") && !grounded)
+                {
+                    _climbingDirection = _moveDelta.x;
+                    _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.8f);
+                }
+                else
+                {
+                    _climbingDirection = 0;
+                }
+            }
+
+            //Check if JumpBuffer has input
+            if(Time.time - _jumpBufferTime < 0.1f && grounded) Jump(jumpForce); 
         }
 
         protected void Dash(float dashForce, Vector3 direction)
@@ -83,13 +109,13 @@ namespace ProjectUtils.TopDown2D
 
         protected void Jump(float force)
         {
-            if (!grounded && Time.time - coyoteTime > 0.15f)
+            if (!grounded && Time.time - _coyoteTime > 0.15f && _climbingDirection == 0)
             {
-                jumpBufferTime = Time.time;
+                _jumpBufferTime = Time.time;
                 return;
             }
-            rb.velocity = new Vector2(rb.velocity.x, force);
-            coyoteTime = float.MinValue;
+            _rb.velocity = new Vector2(_climbingDirection != 0 ? -_climbingDirection*force/4 : _rb.velocity.x, force);
+            _coyoteTime = float.MinValue;
         }
 
 
@@ -97,7 +123,8 @@ namespace ProjectUtils.TopDown2D
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawLine(transform.position, transform.position+new Vector3(0, -transform.localScale.y/2 - 0.1f,0));
+            if(_boxCollider == null) return;
+            Gizmos.DrawWireCube(new Vector3(transform.position.x, transform.position.y - 0.1f,0), _boxCollider.size );
         }
     }
 }
