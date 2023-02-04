@@ -1,3 +1,4 @@
+using ProjectUtils.ObjectPooling;
 using ProjectUtils.TopDown2D;
 using UnityEngine;
     public class PlayerController : Mover
@@ -7,7 +8,7 @@ using UnityEngine;
         [Header("Cooldown")]
         [SerializeField] private float dashCoolDown;
         private float _lastDashTime;
-
+        
         private void Awake()
         {
             _lastValidDirection = Vector3.right;
@@ -16,7 +17,6 @@ using UnityEngine;
         void Update()
         {
             float x = Input.GetAxisRaw("Horizontal");
-            float y = Input.GetAxisRaw("Vertical");
             _direction = new Vector3(x, 0, 0);
             if (_direction != Vector3.zero) _lastValidDirection = _direction;
 
@@ -44,6 +44,7 @@ using UnityEngine;
                     meleeAttack.AttackCircle(_lastValidDirection, 2, 30, gameObject.GetInstanceID());
                 }
             }
+            
         }
 
         private void FixedUpdate()

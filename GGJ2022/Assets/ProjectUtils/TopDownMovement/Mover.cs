@@ -27,7 +27,7 @@ namespace ProjectUtils.TopDown2D
         protected bool grounded;
         
         private BoxCollider2D _boxCollider;
-        private float _climbingDirection;
+        protected float climbingDirection;
 
         protected void Start()
         {
@@ -76,21 +76,21 @@ namespace ProjectUtils.TopDown2D
             {
                 Vector3 targetVelocity = grounded ? _moveDelta : Vector2.Lerp(_rb.velocity, _moveDelta, Time.deltaTime * 20f * airControl);
                 _rb.velocity = (Vector2)targetVelocity;
-                if (_climbingDirection != 0)
+                if (climbingDirection != 0)
                 {
-                    _climbingDirection = 0;
+                    climbingDirection = 0;
                 }
             }
             else
             {
                 if (hit.transform.CompareTag("Climbable") && !grounded)
                 {
-                    _climbingDirection = _moveDelta.x;
+                    climbingDirection = input.x;
                     _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.8f);
                 }
                 else
                 {
-                    _climbingDirection = 0;
+                    climbingDirection = 0;
                 }
             }
 
@@ -109,12 +109,12 @@ namespace ProjectUtils.TopDown2D
 
         protected void Jump(float force)
         {
-            if (!grounded && Time.time - _coyoteTime > 0.15f && _climbingDirection == 0)
+            if (!grounded && Time.time - _coyoteTime > 0.15f && climbingDirection == 0)
             {
                 _jumpBufferTime = Time.time;
                 return;
             }
-            _rb.velocity = new Vector2(_climbingDirection != 0 ? -_climbingDirection*force/4 : _rb.velocity.x, force);
+            _rb.velocity = new Vector2(climbingDirection != 0 ? -climbingDirection*force/4 : _rb.velocity.x, force);
             _coyoteTime = float.MinValue;
         }
 
