@@ -10,7 +10,7 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] protected float speed = 4;
         [SerializeField] private LayerMask collisionLayer;
         [SerializeField] private GameObject moverDisplay;
-        private Rigidbody2D rb;
+        protected Rigidbody2D rb;
         private RaycastHit2D _hit;
         protected MeleeAttack meleeAttack;
         protected RangedAttack rangedAttack;
@@ -21,7 +21,7 @@ namespace ProjectUtils.TopDown2D
        private float coyoteTime;
         private float jumpBufferTime;
 
-        [SerializeField]  private bool grounded;
+        [SerializeField]  protected bool grounded;
 
         private BoxCollider2D _boxCollider;
 
@@ -34,11 +34,15 @@ namespace ProjectUtils.TopDown2D
             rb = GetComponent<Rigidbody2D>();
             jumpBufferTime = float.MinValue;
         }
+        
+        
 
         protected virtual void UpdateMotor(Vector3 input)
         {
             _moveDelta = new Vector3(input.x * speed, rb.velocity.y, 0);
-
+            
+            
+            
             if (_moveDelta.x < 0)
             {
                 moverDisplay.transform.localScale = new Vector3(-1, 1, 1);

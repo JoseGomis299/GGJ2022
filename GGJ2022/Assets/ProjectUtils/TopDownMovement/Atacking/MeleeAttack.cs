@@ -16,7 +16,7 @@ namespace ProjectUtils.Attacking
         private Vector2 squareDimensions;
 
 
-        public void AttackCircle(Vector3 direction, int attackDamage, float pushForce, int attackerID)
+        public void AttackCircle(Vector3 direction, int attackDamage, float pushForce)
         {
             if (Time.time - _lastAttackTime < attackCoolDown) return;
             _lastAttackTime = Time.time;
@@ -25,13 +25,13 @@ namespace ProjectUtils.Attacking
             var hits = Physics2D.OverlapCircleAll(attackPosition, radius);
             foreach (var hit in hits)
             {
-                if (hit.gameObject.GetInstanceID() == attackerID) continue;
+                if (hit.gameObject.GetInstanceID() == gameObject.GetInstanceID()) continue;
                 var damageable = hit.GetComponent<IDamageable>();
                 damageable?.ReceiveDamage(new Damage(transform.position, attackDamage, pushForce));
             }
         }
 
-        public void AttackSquare(Vector3 direction, int attackDamage, float pushForce, int attackerID)
+        public void AttackSquare(Vector3 direction, int attackDamage, float pushForce)
         {
             if (Time.time - _lastAttackTime < attackCoolDown) return;
             _lastAttackTime = Time.time;
@@ -45,7 +45,7 @@ namespace ProjectUtils.Attacking
             var hits = Physics2D.OverlapBoxAll(attackPosition, squareDimensions, attackAngle);
             foreach (var hit in hits)
             {
-                if (hit.gameObject.GetInstanceID() == attackerID) continue;
+                if (hit.gameObject.GetInstanceID() == gameObject.GetInstanceID()) continue;
                 var damageable = hit.GetComponent<IDamageable>();
                 damageable?.ReceiveDamage(new Damage(transform.position, attackDamage, pushForce));
             }
