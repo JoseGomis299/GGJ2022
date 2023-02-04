@@ -1,46 +1,23 @@
-Unity Editor version:    2021.3.11f1 (0a5ca18544bf)
-Branch:                  2021.3/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 13.0.1 (Build 22A400)
-Darwin version:          22.1.0
-Architecture:            arm64
-Running under Rosetta:   NO
-Available memory:        16384 MB
 Using pre-set license
-<<<<<<< Updated upstream
 Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'es' Physical Memory: 15773 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'es' Physical Memory: 16246 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
-=======
-Pro License: YES
->>>>>>> Stashed changes
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-<<<<<<< Updated upstream
-C:/Users/miguelife/Documents/GitHub/GGJ2022/GGJ2022
+C:/Users/pmarc/Documents/GitHub/GGJ2022/GGJ2022
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51329
-Successfully changed project path to: C:/Users/miguelife/Documents/GitHub/GGJ2022/GGJ2022
-C:/Users/miguelife/Documents/GitHub/GGJ2022/GGJ2022
-=======
-/Users/carlosruizaguirre/Documents/GitHub/GGJ2022/GGJ2022
--logFile
-Logs/AssetImportWorker1.log
--srvPort
-59088
-Successfully changed project path to: /Users/carlosruizaguirre/Documents/GitHub/GGJ2022/GGJ2022
-/Users/carlosruizaguirre/Documents/GitHub/GGJ2022/GGJ2022
->>>>>>> Stashed changes
+57884
+Successfully changed project path to: C:/Users/pmarc/Documents/GitHub/GGJ2022/GGJ2022
+C:/Users/pmarc/Documents/GitHub/GGJ2022/GGJ2022
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -70,237 +47,285 @@ Successfully changed project path to: /Users/carlosruizaguirre/Documents/GitHub/
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-<<<<<<< Updated upstream
-Refreshing native plugins compatible for Editor in 74.92 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 445.32 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/miguelife/Documents/GitHub/GGJ2022/GGJ2022/Assets
+[Subsystems] Discovering subsystems at path C:/Users/pmarc/Documents/GitHub/GGJ2022/GGJ2022/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c91)
     Vendor:   NVIDIA
-    VRAM:     6023 MB
-    Driver:   30.0.15.1278
+    VRAM:     2999 MB
+    Driver:   26.21.14.4145
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005969 seconds.
+Registered in 0.062084 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 78.91 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 466.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.575 seconds
+- Completed reload, in  3.344 seconds
 Domain Reload Profiling:
-	ReloadAssembly (576ms)
-		BeginReloadAssembly (60ms)
-=======
-Refreshing native plugins compatible for Editor in 119.02 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/carlosruizaguirre/Documents/GitHub/GGJ2022/GGJ2022/Assets
-GfxDevice: creating device client; threaded=0; jobified=0
- preferred device: Apple M1 (high power)
-Metal devices available: 1
-0: Apple M1 (high power)
-Using device Apple M1 (high power)
-Initializing Metal device caps: Apple M1
-Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56227
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003153 seconds.
-Native extension for WindowsStandalone target not found
-[usbmuxd] Start listen thread
-[usbmuxd] Listen thread started
-[usbmuxd] Send listen message
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 139.34 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.802 seconds
-Domain Reload Profiling:
-	ReloadAssembly (803ms)
-		BeginReloadAssembly (72ms)
->>>>>>> Stashed changes
+	ReloadAssembly (3346ms)
+		BeginReloadAssembly (348ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-<<<<<<< Updated upstream
-		EndReloadAssembly (420ms)
-			LoadAssemblies (58ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (2549ms)
+			LoadAssemblies (327ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (91ms)
+			SetupTypeCache (352ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (260ms)
+			RebuildScriptCaches (186ms)
+			SetupLoadedEditorAssemblies (1665ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (53ms)
-=======
-		EndReloadAssembly (625ms)
-			LoadAssemblies (73ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (111ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (439ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (132ms)
->>>>>>> Stashed changes
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (139ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-<<<<<<< Updated upstream
-				ProcessInitializeOnLoadAttributes (90ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
-=======
-				ProcessInitializeOnLoadAttributes (105ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
->>>>>>> Stashed changes
+				InitializePlatformSupportModulesInManaged (52ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (467ms)
+				BeforeProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (997ms)
+				ProcessInitializeOnLoadMethodAttributes (142ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-<<<<<<< Updated upstream
-Registered in 0.006575 seconds.
+Registered in 0.035755 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\miguelife\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\miguelife\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-=======
-Registered in 0.010021 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/carlosruizaguirre/Documents/GitHub/GGJ2022/GGJ2022/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/carlosruizaguirre/Documents/GitHub/GGJ2022/GGJ2022/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
->>>>>>> Stashed changes
+Symbol file LoadedFromMemory doesn't match image C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-<<<<<<< Updated upstream
-Refreshing native plugins compatible for Editor in 71.51 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 242.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
 Mono: successfully reloaded assembly
-- Completed reload, in  1.042 seconds
+- Completed reload, in  4.414 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1043ms)
-		BeginReloadAssembly (207ms)
-=======
-Refreshing native plugins compatible for Editor in 274.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.943 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1944ms)
-		BeginReloadAssembly (274ms)
->>>>>>> Stashed changes
+	ReloadAssembly (4416ms)
+		BeginReloadAssembly (253ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (23ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-<<<<<<< Updated upstream
-			CreateAndSetChildDomain (130ms)
-		EndReloadAssembly (742ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (3862ms)
+			LoadAssemblies (226ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (184ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (401ms)
+			SetupTypeCache (682ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (205ms)
+			SetupLoadedEditorAssemblies (2584ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (72ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (197ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (6ms)
-=======
-			CreateAndSetChildDomain (150ms)
-		EndReloadAssembly (1409ms)
-			LoadAssemblies (131ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (352ms)
-			ReleaseScriptCaches (6ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (785ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (33ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (276ms)
-				BeforeProcessingInitializeOnLoad (169ms)
-				ProcessInitializeOnLoadAttributes (262ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
-				AfterProcessingInitializeOnLoad (2ms)
->>>>>>> Stashed changes
+				RefreshPlugins (243ms)
+				BeforeProcessingInitializeOnLoad (213ms)
+				ProcessInitializeOnLoadAttributes (1985ms)
+				ProcessInitializeOnLoadMethodAttributes (105ms)
+				AfterProcessingInitializeOnLoad (27ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-<<<<<<< Updated upstream
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 1.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4068 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (56.4 KB). Loaded Objects now: 4526.
-Memory consumption went from 151.3 MB to 151.3 MB.
-Total: 3.519400 ms (FindLiveObjects: 0.356200 ms CreateObjectMapping: 0.106400 ms MarkObjects: 2.882800 ms  DeleteObjects: 0.173200 ms)
-=======
-Launching external process: /Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.16 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4083 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (40.5 KB). Loaded Objects now: 4541.
-Memory consumption went from 130.8 MB to 130.8 MB.
-Total: 4.370458 ms (FindLiveObjects: 0.188292 ms CreateObjectMapping: 0.102583 ms MarkObjects: 3.985166 ms  DeleteObjects: 0.093250 ms)
->>>>>>> Stashed changes
+Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (56.0 KB). Loaded Objects now: 4541.
+Memory consumption went from 151.8 MB to 151.7 MB.
+Total: 22.738300 ms (FindLiveObjects: 0.590000 ms CreateObjectMapping: 0.538600 ms MarkObjects: 21.497200 ms  DeleteObjects: 0.109300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-<<<<<<< Updated upstream
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-=======
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020110 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\pmarc\Documents\GitHub\GGJ2022\GGJ2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.541 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3542ms)
+		BeginReloadAssembly (408ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (102ms)
+		EndReloadAssembly (2869ms)
+			LoadAssemblies (244ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (641ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (125ms)
+			SetupLoadedEditorAssemblies (1337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (207ms)
+				ProcessInitializeOnLoadAttributes (957ms)
+				ProcessInitializeOnLoadMethodAttributes (118ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4073 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.6 KB). Loaded Objects now: 4545.
+Memory consumption went from 151.2 MB to 151.1 MB.
+Total: 22.966000 ms (FindLiveObjects: 0.531000 ms CreateObjectMapping: 0.648100 ms MarkObjects: 21.734300 ms  DeleteObjects: 0.051100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 113748.465092 seconds.
-  path: Assets/ProjectUtils
-  artifactKey: Guid(f978371be41018545b7a611ade1ee673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ProjectUtils using Guid(f978371be41018545b7a611ade1ee673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b14fadfba1d9a0f9046e3794cba7bf') in 0.007661 seconds 
->>>>>>> Stashed changes
+  Time since last request: 385508.822608 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_1.asset
+  artifactKey: Guid(8dd3d75dee0eb684d8025e77f6cfb78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_1.asset using Guid(8dd3d75dee0eb684d8025e77f6cfb78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84016e008b40450fd7e3a7bc1c519a6a') in 0.414546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_23.asset
+  artifactKey: Guid(679ef090c30ea8d41856a1afcfaee0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_23.asset using Guid(679ef090c30ea8d41856a1afcfaee0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907ee024a66596c412af10d600770483') in 0.061771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_9.asset
+  artifactKey: Guid(454d42fd0ef6adc44905d8081dadf755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_9.asset using Guid(454d42fd0ef6adc44905d8081dadf755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2168509d50fd7f95226ebb356f1d9ed8') in 0.040910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_12.asset
+  artifactKey: Guid(72bde177d59e3db4d93752263ba125b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_12.asset using Guid(72bde177d59e3db4d93752263ba125b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c0d27eb2a7d8d2b4403be208c459a7') in 0.042363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_8.asset
+  artifactKey: Guid(484dc37920c7cd7449c8fd129285df2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_8.asset using Guid(484dc37920c7cd7449c8fd129285df2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ad48bdd38f0127edebe213141cc351') in 0.039156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_26.asset
+  artifactKey: Guid(b6e08dda14345f643aa357121368d8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_26.asset using Guid(b6e08dda14345f643aa357121368d8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472af2902437a24f333a5fad67c640d9') in 0.039141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_6.asset
+  artifactKey: Guid(c4e8697c7b2f45d4c95e17d98eac9059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_6.asset using Guid(c4e8697c7b2f45d4c95e17d98eac9059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c7569c4a3955d5d289c6c79b851080') in 0.044382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_17.asset
+  artifactKey: Guid(a0376b22f9db94e47b0f5350bf67a225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_17.asset using Guid(a0376b22f9db94e47b0f5350bf67a225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8c93bb93af07b669dfb53b0cd62c979') in 0.034671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/tiles-backdrop/terra/terra.prefab
+  artifactKey: Guid(65d3cfbbd6a536c41a6b3dbc377af1e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/terra.prefab using Guid(65d3cfbbd6a536c41a6b3dbc377af1e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d68672f5b13a7091aa67034ad6c02c') in 0.269566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_13.asset
+  artifactKey: Guid(d881c1ff601a6a64db19632632b185f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_13.asset using Guid(d881c1ff601a6a64db19632632b185f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a796ad6ecc06c09d13fcd1a0f0ffe6') in 0.055221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_16.asset
+  artifactKey: Guid(269bfc08e52989f43bab21f3d6f5361d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_16.asset using Guid(269bfc08e52989f43bab21f3d6f5361d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c18dd269c0e40596b9f49d572f33e51') in 0.046519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_4.asset
+  artifactKey: Guid(dbe80a1f75070da46b1017b1d7eddb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_4.asset using Guid(dbe80a1f75070da46b1017b1d7eddb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18122f6cfa85a5681e6e871b472a21b4') in 0.052141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/tiles-backdrop/terra/rect234_25.asset
+  artifactKey: Guid(dee361e3a741ec0469ba78f02490f980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles-backdrop/terra/rect234_25.asset using Guid(dee361e3a741ec0469ba78f02490f980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f277526a343bad4c72309c95c97085e0') in 0.049757 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
