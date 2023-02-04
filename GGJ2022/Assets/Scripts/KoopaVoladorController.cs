@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class GroundEnemyController : Mover
+public class KoopaVoladorController : Mover
 {
     private bool startDirection; //TRUE IZQUIERDA, FALSE DERECHA
     private Vector3 direction;
@@ -27,9 +27,9 @@ public class GroundEnemyController : Mover
         palodeciegodchaCollider = palodeciegodcha.GetComponent<BoxCollider2D>();
         palodeciegoizq = transform.GetChild(1).gameObject;
         palodeciegodizqCollider = palodeciegoizq.GetComponent<BoxCollider2D>();
-        
-        
-        
+
+
+
         startDirection = (Random.value > 0.5f);
         if (startDirection)
         {
@@ -47,7 +47,7 @@ public class GroundEnemyController : Mover
         if (other.gameObject.tag.Equals("Ground"))
         {
             Debug.Log("Nene que te caes");
-            direction = (-1) * direction;
+            direction *= -1;
         }
 
     }
@@ -59,6 +59,7 @@ public class GroundEnemyController : Mover
     void FixedUpdate()
     {
 
+        
         UpdateMotor(direction);
        
     }

@@ -8,7 +8,7 @@ namespace ProjectUtils.TopDown2D
     {
         private Vector3 _moveDelta;
         [SerializeField] protected float speed = 4;
-        [SerializeField] private LayerMask collisionLayer;
+        [SerializeField] protected LayerMask collisionLayer;
         [SerializeField] private GameObject moverDisplay;
         protected Rigidbody2D rb;
         private RaycastHit2D _hit;
