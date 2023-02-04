@@ -46,7 +46,7 @@ public class PlayerActions : MonoBehaviour
 
     private void Attack()
     {
-        if(Input.GetKeyDown("space") && !isAttacking && objGrabbed == null && !isPullingRoot)
+        if(Input.GetKeyDown("e") && !isAttacking && objGrabbed == null && !isPullingRoot)
         {
             isAttacking = true;
         }
@@ -59,9 +59,9 @@ public class PlayerActions : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(slashList[slashNum].AttackPoint.position, slashList[slashNum].AttackRange / 2, 0f, enemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {
+            
             IDamageable rival = enemy.gameObject.GetComponent<IDamageable>();
             rival.ReceiveDamage(new Damage(transform.position, slashList[slashNum].Damage, 0));
-
             hitEnemy = true;
         }
         anim.Play(slashName);
@@ -70,7 +70,7 @@ public class PlayerActions : MonoBehaviour
 
     public bool isInGround()
     {
-        if (Physics2D.OverlapBox(groundCheck.transform.position, new Vector2(0.49f,0.03f), 0, LayerMask.GetMask("Ground"))) //checks if set box overlaps with ground
+        if (Physics2D.OverlapBox(groundCheck.transform.position, new Vector2(0.49f,0.03f), 0, LayerMask.GetMask("Obstacles"))) //checks if set box overlaps with ground
         {
             return true;
         }
@@ -91,6 +91,7 @@ public class PlayerActions : MonoBehaviour
         if (collision.gameObject.tag == "Root")
         {
             root = collision.gameObject.GetComponent<Root>();
+            Debug.Log("A");
         }
     }
 

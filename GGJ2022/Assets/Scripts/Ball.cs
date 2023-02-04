@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rigidbody2D;
     [SerializeField]
     private float dmg;
+    public bool lanzada;
 
     private void Start()
     {
@@ -16,15 +17,16 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.tag == "Ground")
+        if(collision.transform.tag == "Ground" && lanzada)
         {
             Destroy(gameObject, 0.5f);
         }
         
             IDamageable rival = collision.gameObject.GetComponent<IDamageable>();
-        if (rival != null)
+        if (rival != null && lanzada)
         {
             rival.ReceiveDamage(new Damage(transform.position, dmg, 0));
+            Destroy(gameObject);
         }
 
     }

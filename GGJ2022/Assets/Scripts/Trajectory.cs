@@ -16,6 +16,7 @@ public class Trajectory : MonoBehaviour
     private float _vel; //Initial Velocity, calculated via V = Force / Mass * fixedTime (0.02)
     private float _gravity;
     private float _collisionCheckRadius = 0.1f; //Collision radius of last point on SimulationArc, to communicate with it when to stop. Currently using IgnoreRaycast Layer on some objects, suboptimal
+    public LayerMask ignoreLayer;
 
     // Start is called before the first frame update
     void Awake()
@@ -67,7 +68,7 @@ public class Trajectory : MonoBehaviour
 
     private bool CheckForCollision(Vector2 position)
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(position, _collisionCheckRadius); //Measure collision via a small circle at the latest position, dont continue simulating Arc if hit
+        Collider2D[] hits = Physics2D.OverlapCircleAll(position, _collisionCheckRadius,~ignoreLayer); //Measure collision via a small circle at the latest position, dont continue simulating Arc if hit
         if (hits.Length > 0) //Return true if something is hit, stopping Arc simulation
         {
             return true;
@@ -79,11 +80,11 @@ public class Trajectory : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.GetChild(0).Rotate(0, 0, -100f * Time.deltaTime);
+            transform.GetChild(0).Rotate(0, 0, -100f * gameObject.transform.localScale.x  * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.GetChild(0).Rotate(0, 0, 100f * Time.deltaTime);
+            transform.GetChild(0).Rotate(0, 0, 100f * gameObject.transform.localScale.x * Time.deltaTime);
         }
     }
 }

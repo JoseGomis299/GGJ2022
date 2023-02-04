@@ -16,12 +16,18 @@ using UnityEngine;
         void Update()
         {
             float x = Input.GetAxisRaw("Horizontal");
-            float y = Input.GetAxisRaw("Vertical");
             _direction = new Vector3(x, 0, 0);
-            if (_direction != Vector3.zero) _lastValidDirection = _direction;
+
+        if (_direction != Vector3.zero)
+        {
+            gameObject.GetComponent<Animator>().SetBool("onWalking",true);
+            _lastValidDirection = _direction;
+        }else
+            gameObject.GetComponent<Animator>().SetBool("onWalking", false);
 
 
-            if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
             {
                 _lastDashTime = Time.time;
                 Dash(25f, _direction);

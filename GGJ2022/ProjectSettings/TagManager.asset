@@ -5,16 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - Climbable
+  - Root
+  - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Obstacles
-  - 
-  - 
+  - EnemyLayer
+  - Ball
   - 
   - 
   - 
