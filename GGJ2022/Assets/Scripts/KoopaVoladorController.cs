@@ -124,7 +124,7 @@ public class KoopaVoladorController : Mover
                 rb.velocity = rb.velocity/3;
                 rangedAttack.Attack(transform.position, 
                         target.position - transform.position, 
-                        2, 0, 0, 0, 0, 2f);
+                        2, 0, 0, 0, 0, 2f, Vector3.one*0.25f);
 
                 //DISPARAR
             }

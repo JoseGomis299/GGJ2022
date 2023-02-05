@@ -16,15 +16,14 @@ using UnityEngine.UI;
         private Animator animator;
         private PlayerActions playerActions;
 
-    public static PlayerController Instance;
+        public static PlayerController Instance;
         public bool recover = true;
 
         [SerializeField] private HealthBar healthBar;
         
         private void Awake()
         {
-            
-            healthBar.SetMaxHealth(maxHealth/maxHealth);
+           //if(healthBar == null) healthBar.SetMaxHealth(maxHealth/maxHealth);
 
             if (Instance == null) Instance = this;
             _lastValidDirection = Vector3.right;
@@ -35,7 +34,7 @@ using UnityEngine.UI;
         public void Update()
         {
 
-            healthBar.SetHealth(health/maxHealth);
+            //healthBar.SetHealth(health/maxHealth);
             
             if (grounded  && recover)
             {
