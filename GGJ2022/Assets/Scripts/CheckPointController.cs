@@ -22,6 +22,12 @@ public class CheckPointController : MonoBehaviour
         {
             if (_checkPoints[i].reached && i > currentCheckPointIndex) currentCheckPointIndex = i;
         }
+
+        if (currentCheckPointIndex == 2 && PlayerController.Instance.canDash == false)
+            PlayerController.Instance.canDash = true;
+        
+        if (currentCheckPointIndex == 3 && PlayerController.Instance.canClimb == false)
+            PlayerController.Instance.canClimb = true;
     }
 
     public Vector3 GetCheckPointPosition()

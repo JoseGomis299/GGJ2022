@@ -16,7 +16,7 @@ public class WallRoot : MonoBehaviour, IDamageable
         {
             GetComponent<SpriteRenderer>().enabled = false;
             var child = transform.GetChild(0);
-            _lastPosition = child.transform.position + (child.transform.localScale.x)*growDirection;
+            _lastPosition = (child.transform.localScale.x)*growDirection;
             StartCoroutine(GrowRoot(child));
         }
     }
@@ -25,7 +25,7 @@ public class WallRoot : MonoBehaviour, IDamageable
     {
         while (root.position != _lastPosition)
         {
-            root.position = Vector3.Lerp(root.position, _lastPosition, Time.deltaTime);
+            root.localPosition = Vector3.Lerp(root.localPosition, _lastPosition, Time.deltaTime);
             yield return null;
         }
     }

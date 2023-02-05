@@ -12,8 +12,11 @@ using UnityEngine;
         public bool isReallyAtacking;
         private Animator animator;
         private PlayerActions playerActions;
+
+        public static PlayerController Instance;
         private void Awake()
         {
+            if (Instance == null) Instance = this;
             _lastValidDirection = Vector3.right;
             animator = GetComponent<Animator>();
             playerActions = gameObject.GetComponent<PlayerActions>();
@@ -46,7 +49,6 @@ using UnityEngine;
 
             if (Input.GetMouseButtonDown(0))
             {
-                ReceiveDamage(new Damage(Vector3.zero, 10,0));
 
             }
 

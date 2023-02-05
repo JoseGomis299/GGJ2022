@@ -12,8 +12,8 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] protected float speed = 4;
         [SerializeField] protected float airControl = 0.5f;
         [SerializeField] private LayerMask collisionLayer;
-        [SerializeField] protected bool canClimb;
-        [SerializeField] protected bool canDash;
+        public bool canClimb;
+        public bool canDash;
         [SerializeField] private GameObject dashEcho;
         private Vector3 _moveDelta;
         private Rigidbody2D _rb;

@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3077853374355678375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -279,8 +279,8 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 64
-  canClimb: 0
-  canDash: 0
+  canClimb: 1
+  canDash: 1
   dashEcho: {fileID: 0}
   jumpForce: 17
   grounded: 0
@@ -380,7 +380,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41ac3057f4637f048aed90e694cfde50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sphere: {fileID: 928502933362979629, guid: 63aebb71f4810374bab2fb0de8b7fd7d, type: 3}
+  sphere: {fileID: 928502933362979629, guid: 63aebb71f4810374bab2fb0de8b7fd7d, type: 3}
   excludeLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -489,7 +489,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.043922514, y: -0.10982829}
+  m_Offset: {x: 0, y: -0.10982829}
   m_Size: {x: 0.84521216, y: 1.1993443}
   m_Direction: 0
 --- !u!1001 &3077853374906838370

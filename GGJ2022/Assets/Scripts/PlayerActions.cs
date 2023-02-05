@@ -94,11 +94,15 @@ public class PlayerActions : MonoBehaviour
         if (collision.gameObject.tag == "Root")
         {
             root = collision.gameObject.GetComponent<Root>();
+            root.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if(root == null) return;
+        
+        root.transform.GetChild(0).gameObject.SetActive(false);
         root = null;
 
     }
