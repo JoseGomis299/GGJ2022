@@ -13,10 +13,12 @@ using UnityEngine;
         private Animator animator;
         private PlayerActions playerActions;
 
-    public bool recover = true;
+    public static PlayerController Instance;
+        public bool recover = true;
 
         private void Awake()
         {
+        if (Instance == null) Instance = this;
             _lastValidDirection = Vector3.right;
             animator = GetComponent<Animator>();
             playerActions = gameObject.GetComponent<PlayerActions>();
