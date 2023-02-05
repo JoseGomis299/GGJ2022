@@ -55,7 +55,7 @@ namespace ProjectUtils.TopDown2D
 
     protected virtual void Death()
     {
-      Destroy(gameObject);
+      gameObject.SetActive(false);
     }
   }
 }

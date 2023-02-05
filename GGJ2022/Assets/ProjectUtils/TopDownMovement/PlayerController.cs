@@ -1,3 +1,4 @@
+using ProjectUtils.Attacking;
 using ProjectUtils.ObjectPooling;
 using ProjectUtils.TopDown2D;
 using UnityEngine;
@@ -31,7 +32,7 @@ using UnityEngine;
         if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
             {
                 _lastDashTime = Time.time;
-                Dash(25f, _direction);
+                Dash(35f, _direction);
             }
             
             if (Input.GetKeyDown(KeyCode.Space))
@@ -41,7 +42,7 @@ using UnityEngine;
 
             if (Input.GetMouseButtonDown(0))
             {
-                
+                ReceiveDamage(new Damage(Vector3.zero, 10,0));
             }
 
             if (Input.GetMouseButtonDown(1))
@@ -58,6 +59,10 @@ using UnityEngine;
         {
             UpdateMotor(_direction);
         }
-        
+
+        protected override void Death()
+        {
+            transform.position = CheckPointController.Instance.GetCheckPointPosition();
+        }
     }
 
