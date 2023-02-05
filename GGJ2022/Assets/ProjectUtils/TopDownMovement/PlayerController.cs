@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
 using ProjectUtils.Attacking;
-=======
->>>>>>> Stashed changes
 using ProjectUtils.ObjectPooling;
 using ProjectUtils.TopDown2D;
 using UnityEngine;
@@ -12,13 +9,9 @@ using UnityEngine;
         [Header("Cooldown")]
         [SerializeField] private float dashCoolDown;
         private float _lastDashTime;
-<<<<<<< Updated upstream
     public bool isReallyAtacking;
         private Animator animator;
     private PlayerActions playerActions;
-=======
-        
->>>>>>> Stashed changes
         private void Awake()
         {
             _lastValidDirection = Vector3.right;
@@ -68,14 +61,10 @@ using UnityEngine;
                     meleeAttack.AttackCircle(_lastValidDirection, 30, 30, gameObject.GetInstanceID());
                 }
             }
-<<<<<<< Updated upstream
 
         if (playerActions.isPullingRoot || isReallyAtacking)
         {
             _direction = new Vector3(0, 0, 0);
-=======
-            
->>>>>>> Stashed changes
         }
 
     }

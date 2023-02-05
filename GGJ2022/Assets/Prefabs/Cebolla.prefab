@@ -10,35 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 305279542123907135}
   - component: {fileID: 5775105814091236945}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 5233444482499209820}
-  - component: {fileID: 1164927117828433674}
-  - component: {fileID: -4418137524256548224}
-  m_Layer: 7
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   - component: {fileID: 1164927117828433674}
   - component: {fileID: -4418137524256548224}
   - component: {fileID: 5393186574845172771}
   m_Layer: 8
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_Name: Cebolla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,39 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!50 &5233444482499209820
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928502933362979629}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 2
-  m_Material: {fileID: 6200000, guid: 1087ddd2b1e44604cae76cae2e2bccb1, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 2
-  m_CollisionDetection: 1
-  m_Constraints: 0
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 --- !u!58 &1164927117828433674
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -168,38 +110,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928502933362979629}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Enabled: 0
-=======
   m_Enabled: 1
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Enabled: 1
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Enabled: 1
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Enabled: 1
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18bcba32cd3d8464db6033efcc163fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   dmg: 10
   lanzada: 0
 --- !u!50 &5393186574845172771
@@ -223,13 +138,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db

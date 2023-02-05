@@ -200,24 +200,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2928186}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.05, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -225,16 +207,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1606236396}
   m_RootOrder: 3
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2928190
 MonoBehaviour:
@@ -263,17 +235,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2872698976388646329, guid: 0b0dc07683d75404a85bafb3a469badd, type: 3}
   m_PrefabInstance: {fileID: 1662429183}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 --- !u!1 &182824510
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,16 +703,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 --- !u!1 &396088881
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,27 +818,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
   m_RootOrder: 5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_RootOrder: 5
-=======
-  m_RootOrder: 4
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_RootOrder: 4
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_RootOrder: 4
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_RootOrder: 4
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582294811
 GameObject:
@@ -968,41 +899,11 @@ Transform:
   m_GameObject: {fileID: 582294811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -5, z: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LocalScale: {x: 15, y: 5, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_LocalScale: {x: 30, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
   m_RootOrder: 3
-=======
-  m_RootOrder: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &582294815
 BoxCollider2D:
@@ -1139,27 +1040,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
   m_RootOrder: 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_RootOrder: 4
-=======
-  m_RootOrder: 3
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_RootOrder: 3
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_RootOrder: 3
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_RootOrder: 3
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &747136758
 GameObject:
@@ -1174,23 +1055,7 @@ GameObject:
   - component: {fileID: 747136759}
   - component: {fileID: 747136762}
   - component: {fileID: 747136763}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Layer: 8
-=======
   m_Layer: 7
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Layer: 7
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Layer: 7
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Layer: 7
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1209,42 +1074,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-<<<<<<< Updated upstream
   m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-  m_Mass: 50
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 5
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
->>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1315,23 +1148,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_RootOrder: 1
-=======
   m_RootOrder: 0
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_RootOrder: 0
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_RootOrder: 0
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_RootOrder: 0
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &747136762
 BoxCollider2D:
@@ -1373,25 +1190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 10
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  pushRecoverySpeed: 1
-  immuneTime: 0.5
-  ySpeed: 3.75
-  xSpeed: 4
-  collisionLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  moverDisplay: {fileID: 0}
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   immuneTime: 0
   speed: 4
   airControl: 0.5
@@ -1518,16 +1316,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 --- !u!4 &1372987230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2872698976977658141, guid: 0b0dc07683d75404a85bafb3a469badd, type: 3}
@@ -1543,26 +1331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1606236396}
   - component: {fileID: 1606236395}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   - component: {fileID: 1606236403}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  - component: {fileID: 1606236403}
-<<<<<<< Updated upstream
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  - component: {fileID: 1606236403}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  - component: {fileID: 1606236403}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-  - component: {fileID: 1606236398}
->>>>>>> Stashed changes
   - component: {fileID: 1606236397}
   - component: {fileID: 1606236399}
   - component: {fileID: 1606236400}
@@ -1617,52 +1386,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-<<<<<<< Updated upstream
   m_Sprite: {fileID: 338907356, guid: 838364a09d1470b41929a6d430de0062, type: 3}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Sprite: {fileID: -1376417661, guid: 5e9b16a78f8b8ab46a0c372dc217c5b1, type: 3}
-=======
-  m_Sprite: {fileID: 21300000, guid: 8caeeccd945d0c24bba1312486f30302, type: 3}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Sprite: {fileID: 21300000, guid: 8caeeccd945d0c24bba1312486f30302, type: 3}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Sprite: {fileID: 21300000, guid: 8caeeccd945d0c24bba1312486f30302, type: 3}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Sprite: {fileID: 21300000, guid: 8caeeccd945d0c24bba1312486f30302, type: 3}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
->>>>>>> Stashed changes
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-<<<<<<< Updated upstream
   m_Size: {x: 1.1966667, y: 1.4583335}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Size: {x: 1, y: 1}
-=======
-  m_Size: {x: 10.8, y: 10.8}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Size: {x: 10.8, y: 10.8}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Size: {x: 10.8, y: 10.8}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Size: {x: 10.8, y: 10.8}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
->>>>>>> Stashed changes
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1676,59 +1405,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606236394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LocalPosition: {x: 1.77, y: 0, z: 0}
-=======
   m_LocalPosition: {x: -0.05, y: 0, z: 0}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_LocalPosition: {x: -0.05, y: 0, z: 0}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_LocalPosition: {x: -0.05, y: 0, z: 0}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_LocalPosition: {x: -0.05, y: 0, z: 0}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1706399990}
   - {fileID: 92706998}
   - {fileID: 1613002467}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+  - {fileID: 2928189}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-=======
-  - {fileID: 2928189}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  - {fileID: 2928189}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  - {fileID: 2928189}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  - {fileID: 2928189}
-  m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 2
-=======
-  m_RootOrder: 1
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1606236397
 Rigidbody2D:
@@ -1745,111 +1431,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
---- !u!61 &1606236398
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606236394}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Offset: {x: 0, y: -0.24957243}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0526712, y: 1.92}
-    newSize: {x: 1, y: 1}
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-  m_Offset: {x: -0.000000029802322, y: -0.16476727}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8, y: 1.8}
-    newSize: {x: 10.8, y: 10.8}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Size: {x: 1, y: 1.4991448}
-=======
-  m_Size: {x: 0.5903085, y: 1.0273416}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Size: {x: 0.5903085, y: 1.0273416}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Size: {x: 0.5903085, y: 1.0273416}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Size: {x: 0.5903085, y: 1.0273416}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-  m_EdgeRadius: 0
->>>>>>> Stashed changes
 --- !u!114 &1606236399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,23 +1453,7 @@ MonoBehaviour:
   groundCheck: {fileID: 1613002466}
   enemyLayer:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Bits: 256
-=======
     m_Bits: 128
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-    m_Bits: 128
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-    m_Bits: 128
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-    m_Bits: 128
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   slashList:
   - AttackPoint: {fileID: 1372987230}
     AttackRange: {x: 1, y: 1.5, z: 1}
@@ -2031,23 +1602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sphere: {fileID: 928502933362979629, guid: 63aebb71f4810374bab2fb0de8b7fd7d, type: 3}
-<<<<<<< Updated upstream
   excludeLayer:
-=======
-  _force: 800
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-  ignoreLayer:
->>>>>>> Stashed changes
     serializedVersion: 2
     m_Bits: 8
   _force: 800
@@ -2075,7 +1630,6 @@ MonoBehaviour:
   canDash: 0
   jumpForce: 17
   dashCoolDown: 0
-<<<<<<< Updated upstream
   isReallyAtacking: 0
 --- !u!70 &1606236404
 CapsuleCollider2D:
@@ -2093,18 +1647,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.043922514, y: -0.10982829}
   m_Size: {x: 0.84521216, y: 1.1993443}
   m_Direction: 0
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
->>>>>>> Stashed changes
 --- !u!1 &1613002466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,23 +1690,7 @@ GameObject:
   m_Layer: 3
   m_Name: GrabPoint
   m_TagString: Untagged
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
-=======
   m_Icon: {fileID: 0}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Icon: {fileID: 0}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Icon: {fileID: 0}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
-=======
-  m_Icon: {fileID: 0}
->>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
