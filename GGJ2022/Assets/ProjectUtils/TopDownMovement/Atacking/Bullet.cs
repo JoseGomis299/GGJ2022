@@ -39,6 +39,10 @@ namespace ProjectUtils.Attacking
         {
             if (col.gameObject.GetInstanceID() == _attackerID || col.gameObject.GetComponent<Bullet>() != null) return;
             var damageable = col.GetComponent<IDamageable>();
+            Debug.Log(col.name);
+            
+            
+
 
             if (damageable != null)
             {
