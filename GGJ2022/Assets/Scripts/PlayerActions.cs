@@ -27,6 +27,13 @@ public class PlayerActions : MonoBehaviour
     public GameObject objGrabbed;
     public Trajectory trajectory;
 
+    public AudioSource source;
+    public AudioClip clipShake;
+    public AudioClip clipDash;
+    public float volumeShake = 1;
+    public float volumeDash = 1;
+
+
     private void Start()
     {
         anim = GetComponent<Animator>();
