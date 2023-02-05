@@ -16,14 +16,12 @@ public class IddleScript : StateMachineBehaviour
 
         if (animator.gameObject.GetComponent<PlayerActions>().isPullingRoot)
         {
-            Debug.Log("Pulling root");
             PlayerActions instance = animator.gameObject.GetComponent<PlayerActions>();
             animator.Play("Pulling");
         }
 
         if (animator.gameObject.GetComponent<PlayerActions>().isAttacking)
         {
-            Debug.Log("Ataque1");
             PlayerActions instance = animator.gameObject.GetComponent<PlayerActions>();
             instance.Slash(1, "Slash1");
         }

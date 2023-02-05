@@ -16,9 +16,7 @@ public class Trajectory : MonoBehaviour
     private float _vel; //Initial Velocity, calculated via V = Force / Mass * fixedTime (0.02)
     private float _gravity;
     private float _collisionCheckRadius = 0.1f; //Collision radius of last point on SimulationArc, to communicate with it when to stop. Currently using IgnoreRaycast Layer on some objects, suboptimal
-
     public LayerMask ignoreLayer;
-
 
     // Start is called before the first frame update
     void Awake()
@@ -82,19 +80,11 @@ public class Trajectory : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-
-            transform.GetChild(0).Rotate(0, 0, -100f * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.GetChild(0).Rotate(0, 0, 100f * Time.deltaTime);
-
             transform.GetChild(0).Rotate(0, 0, -100f * gameObject.transform.localScale.x  * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.GetChild(0).Rotate(0, 0, 100f * gameObject.transform.localScale.x * Time.deltaTime);
-
         }
     }
 }

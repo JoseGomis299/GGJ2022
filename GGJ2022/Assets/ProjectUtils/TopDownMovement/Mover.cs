@@ -61,7 +61,7 @@ namespace ProjectUtils.TopDown2D
             dashDirection = Vector3.Lerp(dashDirection, Vector3.zero, Time.fixedDeltaTime / 0.075f);
 
             //Check if grounded
-            if (Physics2D.CapsuleCast(transform.position, _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f) )
+            if (Physics2D.CapsuleCast(new Vector2(transform.position.x+_capsuleCollider.offset.x,transform.position.y+_capsuleCollider.offset.y), _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f) )
             {
                 grounded = true;
                 if (_rb.velocity.y <= 0) _coyoteTime = Time.time;

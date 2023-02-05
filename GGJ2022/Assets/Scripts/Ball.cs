@@ -6,7 +6,8 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     private Rigidbody2D rigidbody2D;
-    [SerializeField] private float dmg;
+    [SerializeField]
+    private float dmg;
     public bool lanzada;
 
     private void Start()
@@ -16,26 +17,17 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-        Debug.Log(collision.transform.CompareTag("Ground"));
-        if (collision.transform.tag == "Ground" && lanzada)
+        if(collision.transform.tag == "Ground" && lanzada)
         {
             Destroy(gameObject, 0.5f);
         }
-
+        
         IDamageable rival = collision.gameObject.GetComponent<IDamageable>();
-
-        if (rival != null)
+        if (rival != null && lanzada)
         {
             rival.ReceiveDamage(new Damage(transform.position, dmg, 0));
-
-            if (lanzada)
-            {
-                rival.ReceiveDamage(new Damage(transform.position, dmg, 0));
-                Destroy(gameObject);
-
-            }
-
+            Destroy(gameObject);
         }
+
     }
 }

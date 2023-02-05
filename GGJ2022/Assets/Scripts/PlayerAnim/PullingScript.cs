@@ -28,7 +28,6 @@ public class PullingScript : StateMachineBehaviour
             if (instance.root.currentTime <= 0)
             {
                 cameraShake.isShaking = false;
-                Debug.Log("Objeto Agarrado");
                 instance.isPullingRoot = false;
                 GameObject newRoot =  Instantiate(instance.root.rootObj, instance.transform.GetChild(0));
                 instance.objGrabbed = newRoot;
@@ -41,7 +40,6 @@ public class PullingScript : StateMachineBehaviour
         {
             cameraShake.isShaking = false;
 
-            Debug.Log("Exit");
             instance.isPullingRoot = false;
             animator.Play("Iddle");
         }
