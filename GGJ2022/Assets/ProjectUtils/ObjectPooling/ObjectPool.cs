@@ -72,7 +72,7 @@ namespace ProjectUtils.ObjectPooling
 
         private IEnumerator CheckCoolDown()
         {
-           // var waitTime = new WaitForSeconds(1);
+            var waitTime = new WaitForSeconds(1);
             while (true)
             {
                 if (_activeGameObjectsTime.Count > 0)
@@ -85,7 +85,7 @@ namespace ProjectUtils.ObjectPooling
                         _prefabsPool[i].SetActive(false);
                     }
                 }
-                yield return null;
+                yield return waitTime;
             }
         }
     }
