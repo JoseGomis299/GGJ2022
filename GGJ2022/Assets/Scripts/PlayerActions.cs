@@ -46,7 +46,11 @@ public class PlayerActions : MonoBehaviour
 
     private void Attack()
     {
+<<<<<<< HEAD
         if(Input.GetKeyDown("space") && !isAttacking && objGrabbed == null && !isPullingRoot)
+=======
+        if(Input.GetKeyDown("e") && !isAttacking && objGrabbed == null && !isPullingRoot)
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
         {
             isAttacking = true;
         }
@@ -59,9 +63,15 @@ public class PlayerActions : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(slashList[slashNum].AttackPoint.position, slashList[slashNum].AttackRange / 2, 0f, enemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {
+<<<<<<< HEAD
             IDamageable rival = enemy.gameObject.GetComponent<IDamageable>();
             rival.ReceiveDamage(new Damage(transform.position, slashList[slashNum].Damage, 0));
 
+=======
+            
+            IDamageable rival = enemy.gameObject.GetComponent<IDamageable>();
+            rival.ReceiveDamage(new Damage(transform.position, slashList[slashNum].Damage, 0));
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
             hitEnemy = true;
         }
         anim.Play(slashName);
@@ -70,7 +80,11 @@ public class PlayerActions : MonoBehaviour
 
     public bool isInGround()
     {
+<<<<<<< HEAD
         if (Physics2D.OverlapBox(groundCheck.transform.position, new Vector2(0.49f,0.03f), 0, LayerMask.GetMask("Ground"))) //checks if set box overlaps with ground
+=======
+        if (Physics2D.OverlapBox(groundCheck.transform.position, new Vector2(0.49f,0.03f), 0, LayerMask.GetMask("Obstacles"))) //checks if set box overlaps with ground
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
         {
             return true;
         }
@@ -91,6 +105,10 @@ public class PlayerActions : MonoBehaviour
         if (collision.gameObject.tag == "Root")
         {
             root = collision.gameObject.GetComponent<Root>();
+<<<<<<< HEAD
+=======
+            Debug.Log("A");
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
         }
     }
 
