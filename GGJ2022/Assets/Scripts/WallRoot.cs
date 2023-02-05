@@ -9,6 +9,10 @@ public class WallRoot : MonoBehaviour, IDamageable
     [SerializeField] private Vector3 growDirection;
 
     private Vector3 _lastPosition;
+    public AudioSource source;
+    public AudioClip clip;
+    public float volume = 0.3f;
+    public bool loop = false;
     
     public void ReceiveDamage(Damage dmg)
     {
@@ -23,10 +27,15 @@ public class WallRoot : MonoBehaviour, IDamageable
 
     private IEnumerator GrowRoot(Transform root)
     {
+        source.clip = clip;
+        source.volume = volume;
+        source.loop = loop;
+        source.Play();
         while (root.position != _lastPosition)
         {
             root.localPosition = Vector3.Lerp(root.localPosition, _lastPosition, Time.deltaTime);
             yield return null;
         }
+        source.Stop();
     }
 }

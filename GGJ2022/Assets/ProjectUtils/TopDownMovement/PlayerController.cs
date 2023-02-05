@@ -47,6 +47,11 @@ using UnityEngine;
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
             {
+            PlayerActions playerActions = GetComponent<PlayerActions>();
+            playerActions.source.clip = playerActions.clipDash;
+            playerActions.source.loop = false;
+            playerActions.source.volume = playerActions.volumeDash;
+            playerActions.source.Play();
                 _lastDashTime = Time.time;
                 Dash(35f, _direction);
             }

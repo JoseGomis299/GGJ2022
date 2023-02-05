@@ -13,6 +13,7 @@ public class CameraShake : MonoBehaviour
 	public float maxDelay = 0.5f;
 	private float currentDelay = 0f;
 
+
 	Vector3 originalPos;
 
 	void Awake()
@@ -29,6 +30,7 @@ public class CameraShake : MonoBehaviour
 	{
 		if (isShaking)
 		{
+
 			currentDelay -= Time.deltaTime;
             if (currentDelay <= 0)
             {
