@@ -12,8 +12,8 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] protected float speed = 4;
         [SerializeField] protected float airControl = 0.5f;
         [SerializeField] private LayerMask collisionLayer;
-        public bool canClimb;
-        public bool canDash;
+        [SerializeField] public bool canClimb;
+        [SerializeField] public bool canDash;
         [SerializeField] private GameObject dashEcho;
         private Vector3 _moveDelta;
         protected Rigidbody2D rb;
@@ -46,6 +46,7 @@ namespace ProjectUtils.TopDown2D
 
         protected void UpdateMotor(Vector3 input)
         {
+
             _moveDelta = new Vector3(input.x * speed, rb.velocity.y, 0);
 
             if (_moveDelta.x < 0)
@@ -131,8 +132,19 @@ namespace ProjectUtils.TopDown2D
                 return;
             }
             rb.velocity = new Vector2(climbingDirection != 0 ? -climbingDirection*force : rb.velocity.x, force);
+
+            GetComponent<Animator>().SetBool("isJumping", true);
+            StartCoroutine(recoverTime());
+
             _coyoteTime = float.MinValue;
         }
+
+        private IEnumerator recoverTime()
+        {
+            yield return new WaitForSeconds(0.1f);
+            GetComponent<PlayerController>().recover = true;
+        }
+
 
         private void OnDrawGizmos()
         {

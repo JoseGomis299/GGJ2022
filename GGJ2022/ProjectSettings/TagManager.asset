@@ -8,6 +8,7 @@ TagManager:
   - Root
   - Ground
   - Enemy
+  - Pincho
   layers:
   - Default
   - TransparentFX
