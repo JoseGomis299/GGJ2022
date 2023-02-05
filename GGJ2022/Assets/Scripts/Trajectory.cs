@@ -21,7 +21,7 @@ public class Trajectory : MonoBehaviour
     private LineRenderer _lr; //Line to predict trajectory
 
     [SerializeField]
-    private GameObject _sphere = null; //Bullets, for all intents and purposes
+    public GameObject sphere = null; //Bullets, for all intents and purposes
     private Rigidbody2D _sphereRB = null; //Rigidbodies of bullets, to add force
     [SerializeField] LayerMask excludeLayer;
     public float _force = 500; //Force, can be assigned in Unity Inspector
@@ -40,20 +40,21 @@ public class Trajectory : MonoBehaviour
         _lr = GetComponent<LineRenderer>();
         _lr.startColor = Color.white;
 
-        _sphereRB = _sphere.GetComponent<Rigidbody2D>();
+        _sphereRB = sphere.GetComponent<Rigidbody2D>();
         _mass = _sphereRB.mass;
     }
 
     void Update()
     {
-        playerActions.GrabPoint.position = playerActions.GrabOffset.position;
+        if(playerActions.GrabPoint!= null)playerActions.GrabPoint.position = playerActions.GrabOffset.position;
     }
 
     public void Shoot()
     {
-        GameObject sphere = Instantiate(_sphere, transform.position + transform.up, Quaternion.identity); //Offset spawn position to come out of the end of the cannon
+        GameObject sphere = Instantiate(this.sphere, transform.position + transform.up, Quaternion.identity); //Offset spawn position to come out of the end of the cannon
         Rigidbody2D sphereRB = sphere.GetComponent<Rigidbody2D>();
         sphereRB.AddForce(playerActions.GrabPoint.up * _force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
+        Debug.Log(sphereRB.velocity);
     }
 
     public void DrawTrajectory()
@@ -113,6 +114,18 @@ public class Trajectory : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             playerActions.GrabPoint.Rotate(0, 0, -0.5f);
+        }
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            _force += 500 * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            _force -= 500 * Time.deltaTime;
+            if(_force < 0)
+            {
+                _force = 0;
+            }
         }
     }
 }

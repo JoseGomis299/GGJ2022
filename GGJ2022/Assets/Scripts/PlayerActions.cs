@@ -41,7 +41,7 @@ public class PlayerActions : MonoBehaviour
 
     private void ExtractRoot()
     {
-        if (Input.GetKeyDown("q") && !isPullingRoot && isInGround() && root != null && objGrabbed == null && !isAttacking)
+        if (Input.GetKeyDown(KeyCode.Q) && !isPullingRoot && GetComponent<PlayerController>().grounded && root != null && objGrabbed == null && !isAttacking)
         {
             isPullingRoot = true;
         }

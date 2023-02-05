@@ -6,12 +6,15 @@ public class GrabbingScript : StateMachineBehaviour
 {
 
     private PlayerActions instance;
+    private Trajectory trajectory;
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         instance =   animator.gameObject.GetComponent<PlayerActions>();
-        
+        trajectory = animator.gameObject.GetComponent<Trajectory>();
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -34,6 +37,7 @@ public class GrabbingScript : StateMachineBehaviour
         {
             instance.lanzandoBola = false;
             instance.GetComponent<LineRenderer>().enabled = false;
+            trajectory.sphere.GetComponent<Ball>().lanzada = true;
             Destroy(instance.objGrabbed);
             instance.objGrabbed = null;
             instance.trajectory.Shoot();

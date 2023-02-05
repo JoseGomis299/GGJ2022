@@ -29,7 +29,7 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] protected float jumpForce;
         private float _coyoteTime;
         private float _jumpBufferTime;
-        protected bool grounded;
+        public bool grounded;
         
         private CapsuleCollider2D _capsuleCollider;
         protected float climbingDirection;
@@ -64,7 +64,7 @@ namespace ProjectUtils.TopDown2D
             dashDirection = Vector3.Lerp(dashDirection, Vector3.zero, Time.fixedDeltaTime / 0.075f);
 
             //Check if grounded
-            if (Physics2D.CapsuleCast(new Vector2(transform.position.x+_capsuleCollider.offset.x,transform.position.y+_capsuleCollider.offset.y), _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f) )
+            if (Physics2D.CapsuleCast(new Vector2(transform.position.x,transform.position.y+_capsuleCollider.offset.y), _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f, collisionLayer) )
             {
                 grounded = true;
                 if (_rb.velocity.y <= 0) _coyoteTime = Time.time;

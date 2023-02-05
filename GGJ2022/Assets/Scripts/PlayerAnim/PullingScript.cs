@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,12 +6,16 @@ using UnityEngine;
 public class PullingScript : StateMachineBehaviour
 {
     private PlayerActions instance;
-    private CameraShake cameraShake;
+    private Trajectory trajectory;
 
+    private CameraShake cameraShake;
+    
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         instance = animator.gameObject.GetComponent<PlayerActions>();
+        trajectory = animator.gameObject.GetComponent<Trajectory>();
+
         instance.root.currentTime = instance.root.pullTime;
         cameraShake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
 
@@ -30,8 +35,9 @@ public class PullingScript : StateMachineBehaviour
                 instance.isPullingRoot = false;
                 GameObject newRoot =  Instantiate(instance.root.rootObj, instance.GrabPoint);
                 instance.objGrabbed = newRoot;
+                trajectory.sphere = instance.root.rootObj;
                 newRoot.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-                Destroy(instance.root.gameObject);
+                //Destroy(instance.root.gameObject);
                 instance.lanzandoBola = false;
                 animator.Play("GrabbingObj");
             }

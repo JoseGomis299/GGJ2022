@@ -9,9 +9,9 @@ using UnityEngine;
         [Header("Cooldown")]
         [SerializeField] private float dashCoolDown;
         private float _lastDashTime;
-    public bool isReallyAtacking;
+        public bool isReallyAtacking;
         private Animator animator;
-    private PlayerActions playerActions;
+        private PlayerActions playerActions;
         private void Awake()
         {
             _lastValidDirection = Vector3.right;
@@ -19,18 +19,17 @@ using UnityEngine;
             playerActions = gameObject.GetComponent<PlayerActions>();
         }
 
-    public void Update()
-    {
+        public void Update()
+        {
             float x = Input.GetAxisRaw("Horizontal");
             _direction = new Vector3(x, 0, 0);
 
             if (_direction != Vector3.zero)
             {
-                gameObject.GetComponent<Animator>().SetBool("onWalking", true);
+               if(animator != null) animator.SetBool("onWalking", true);
                 _lastValidDirection = _direction;
             }
-            else
-                gameObject.GetComponent<Animator>().SetBool("onWalking", false);
+            else if(animator != null) animator.SetBool("onWalking", false);
 
 
 
@@ -59,12 +58,13 @@ using UnityEngine;
                 }
             }
 
-        if (playerActions.isPullingRoot || isReallyAtacking)
-        {
-            _direction = new Vector3(0, 0, 0);
+            if(playerActions == null) return;
+            if (playerActions.isPullingRoot || isReallyAtacking)
+            {
+                Debug.Log("VAR");
+                _direction = new Vector3(0, 0, 0);
+            }
         }
-
-    }
         private void FixedUpdate()
         {
             UpdateMotor(_direction);
