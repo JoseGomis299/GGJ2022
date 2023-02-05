@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6530343101976159573}
   - component: {fileID: 6530343101976159570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PaloDeCiego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,9 +71,9 @@ GameObject:
   - component: {fileID: 6530343102890691512}
   - component: {fileID: 6530343102890691495}
   - component: {fileID: 6530343102890691492}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gonva
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 6530343102890691515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 62, y: -3, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6530343101976159573}
