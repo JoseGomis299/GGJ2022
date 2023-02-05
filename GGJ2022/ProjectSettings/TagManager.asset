@@ -8,6 +8,8 @@ TagManager:
   - Root
   - Ground
   - Enemy
+  - wall
+  - mosca
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - Obstacles
   - EnemyLayer
   - Ball
-  - 
+  - BulletLayer
   - 
   - 
   - 

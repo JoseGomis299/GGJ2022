@@ -37,9 +37,6 @@ public class KoopaVoladorController : Mover
     [SerializeField]
     private float distance;
 
-    [SerializeField] private Transform shootPoint;
-    
-
     // Start is called before the first frame update
     void Start()
     {
@@ -85,7 +82,7 @@ public class KoopaVoladorController : Mover
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag.Equals("Wall"))
+        if (other.gameObject.tag.Equals("Ground") ||other.gameObject.tag.Equals("wall") ||other.gameObject.tag.Equals("Climbable") || other.gameObject.tag.Equals("palote"))
         {
             Debug.Log("Ahh **Gime**");
             direction *= -1;
@@ -187,13 +184,13 @@ public class KoopaVoladorController : Mover
     {
         if (direction == Vector3.right)
         {
-            float angle = Mathf.Atan2((target.transform.position - transform.position).y, (target.transform.position - transform.position).x) * Mathf.Rad2Deg;
+            float angle = Mathf.Atan2((target.transform.position - transform.position).x, (target.transform.position - transform.position).y) * Mathf.Rad2Deg;
             GFX.transform.localRotation = Quaternion.Euler(0,0,angle);
 
         }
         else
         {
-            float angle = -Mathf.Atan2((target.transform.position - transform.position).y, (target.transform.position - transform.position).x) * Mathf.Rad2Deg;
+            float angle = -Mathf.Atan2((target.transform.position - transform.position).x, (target.transform.position - transform.position).y) * Mathf.Rad2Deg;
             GFX.transform.localRotation = Quaternion.Euler(0,0,angle);
 
         }
