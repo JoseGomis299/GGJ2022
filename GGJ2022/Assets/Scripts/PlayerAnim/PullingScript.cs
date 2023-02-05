@@ -10,7 +10,7 @@ public class PullingScript : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-      instance =   animator.gameObject.GetComponent<PlayerActions>();
+        instance = animator.gameObject.GetComponent<PlayerActions>();
         instance.root.currentTime = instance.root.pullTime;
         cameraShake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
 
@@ -19,8 +19,7 @@ public class PullingScript : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-
-        if (Input.GetKey("z"))
+        if (Input.GetKey("q"))
         {
             instance.root.currentTime -= Time.deltaTime;
             cameraShake.isShaking = true;
@@ -29,9 +28,11 @@ public class PullingScript : StateMachineBehaviour
             {
                 cameraShake.isShaking = false;
                 instance.isPullingRoot = false;
-                GameObject newRoot =  Instantiate(instance.root.rootObj, instance.transform.GetChild(0));
+                GameObject newRoot =  Instantiate(instance.root.rootObj, instance.GrabPoint);
                 instance.objGrabbed = newRoot;
+                newRoot.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
                 Destroy(instance.root.gameObject);
+                instance.lanzandoBola = false;
                 animator.Play("GrabbingObj");
             }
             
@@ -39,7 +40,6 @@ public class PullingScript : StateMachineBehaviour
         else
         {
             cameraShake.isShaking = false;
-
             instance.isPullingRoot = false;
             animator.Play("Iddle");
         }
