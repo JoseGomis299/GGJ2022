@@ -144,15 +144,6 @@ namespace ProjectUtils.TopDown2D
             yield return new WaitForSeconds(0.1f);
             GetComponent<PlayerController>().recover = true;
         }
-
-
-        private void OnDrawGizmos()
-        {
-            Gizmos.color = Color.red;
-            if(_capsuleCollider == null) return;
-            Gizmos.DrawWireCube(new Vector3(transform.position.x, transform.position.y - 0.1f,0), _capsuleCollider.size );
-            Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(new Vector3(transform.position.x+0.2f*transform.localScale.x, transform.position.y, 0), _capsuleCollider.size.x/2);
-        }
+        
     }
 }

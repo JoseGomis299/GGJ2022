@@ -39,6 +39,7 @@ public class PullingScript : StateMachineBehaviour
                 cameraShake.isShaking = false;
                 instance.isPullingRoot = false;
                 GameObject newRoot =  Instantiate(instance.root.rootObj, instance.GrabPoint);
+                newRoot.GetComponent<Ball>().lanzada = false;
                 instance.objGrabbed = newRoot;
                 trajectory.sphere = instance.root.rootObj;
                 newRoot.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;

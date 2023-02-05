@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: -1
-  lanzada: 1
+  lanzada: 0
 --- !u!50 &5393186574845172771
 Rigidbody2D:
   serializedVersion: 4

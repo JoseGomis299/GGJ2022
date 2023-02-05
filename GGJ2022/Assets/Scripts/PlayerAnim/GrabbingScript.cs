@@ -25,7 +25,8 @@ public class GrabbingScript : StateMachineBehaviour
         if (Input.GetKeyDown("q"))
         {
             instance.lanzandoBola = true;
-           
+            trajectory.sphere.GetComponent<Ball>().lanzada = false;
+
         }
         if (Input.GetKey("q") && instance.lanzandoBola)
         {
