@@ -16,15 +16,14 @@ using UnityEngine.UI;
         private Animator animator;
         private PlayerActions playerActions;
 
-    public static PlayerController Instance;
+        public static PlayerController Instance;
         public bool recover = true;
 
-        //[SerializeField] private HealthBar healthBar;
+        [SerializeField] private HealthBar healthBar;
         
         private void Awake()
         {
-            
-            //healthBar.SetMaxHealth(maxHealth/maxHealth);
+           //if(healthBar == null) healthBar.SetMaxHealth(maxHealth/maxHealth);
 
             if (Instance == null) Instance = this;
             _lastValidDirection = Vector3.right;
@@ -57,17 +56,12 @@ using UnityEngine.UI;
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
             {
-            
-                if (canDash)
-                {
-                    PlayerActions playerActions = GetComponent<PlayerActions>();
-                    playerActions.source.clip = playerActions.clipDash;
-                    playerActions.source.loop = false;
-                    playerActions.source.volume = playerActions.volumeDash;
-                    playerActions.source.Play();
-
-                }
-            _lastDashTime = Time.time;
+            PlayerActions playerActions = GetComponent<PlayerActions>();
+            playerActions.source.clip = playerActions.clipDash;
+            playerActions.source.loop = false;
+            playerActions.source.volume = playerActions.volumeDash;
+            playerActions.source.Play();
+                _lastDashTime = Time.time;
                 Dash(35f, _direction);
             }
 
@@ -92,6 +86,7 @@ using UnityEngine.UI;
             if(playerActions == null) return;
             if (playerActions.isPullingRoot || isReallyAtacking)
             {
+                Debug.Log("VAR");
                 _direction = new Vector3(0, 0, 0);
             }
 
@@ -115,12 +110,7 @@ using UnityEngine.UI;
         
         protected override void Death()
         {
-        PlayerActions playerActions = GetComponent<PlayerActions>();
-        playerActions.source.clip = playerActions.clipScream;
-        playerActions.source.loop = false;
-        playerActions.source.volume = playerActions.volumeDeath;
-        playerActions.source.Play();
-        animator.Play("Dead");
+            animator.Play("Dead");
         }
 
         
