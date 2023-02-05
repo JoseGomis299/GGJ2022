@@ -13,7 +13,12 @@ AnimatorState:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Transitions: []
+=======
+  m_Transitions:
+  - {fileID: 3949568172684501605}
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_Transitions:
   - {fileID: 3949568172684501605}
@@ -170,7 +175,10 @@ AnimatorState:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -202,6 +210,9 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -342,7 +353,10 @@ AnimatorController:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -355,6 +369,9 @@ AnimatorController:
     m_Controller: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -412,6 +429,12 @@ AnimatorStateMachine:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  - serializedVersion: 1
+    m_State: {fileID: 5720068302528335660}
+    m_Position: {x: 370, y: 170, z: 0}
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   - serializedVersion: 1
     m_State: {fileID: 5720068302528335660}
@@ -492,7 +515,10 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -524,6 +550,9 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -612,7 +641,10 @@ AnimatorState:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -646,6 +678,9 @@ AnimatorState:
   m_TimeParameter: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db

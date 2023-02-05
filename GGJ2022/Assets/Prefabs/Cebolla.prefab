@@ -13,11 +13,14 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 5233444482499209820}
   - component: {fileID: 1164927117828433674}
   - component: {fileID: -4418137524256548224}
   m_Layer: 7
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -28,6 +31,9 @@ GameObject:
   m_Layer: 8
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -109,6 +115,7 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!50 &5233444482499209820
 Rigidbody2D:
   serializedVersion: 4
@@ -130,6 +137,8 @@ Rigidbody2D:
   m_SleepingMode: 2
   m_CollisionDetection: 1
   m_Constraints: 0
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -162,7 +171,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Enabled: 0
+=======
+  m_Enabled: 1
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_Enabled: 1
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -179,7 +192,10 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -209,6 +225,9 @@ Rigidbody2D:
   m_Constraints: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db

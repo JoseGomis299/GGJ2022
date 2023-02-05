@@ -49,7 +49,11 @@ public class PlayerActions : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(Input.GetKeyDown("space") && !isAttacking && objGrabbed == null && !isPullingRoot)
+=======
+        if(Input.GetKeyDown("e") && !isAttacking && objGrabbed == null && !isPullingRoot)
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
         if(Input.GetKeyDown("e") && !isAttacking && objGrabbed == null && !isPullingRoot)
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -74,9 +78,15 @@ public class PlayerActions : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             IDamageable rival = enemy.gameObject.GetComponent<IDamageable>();
             rival.ReceiveDamage(new Damage(transform.position, slashList[slashNum].Damage, 0));
 
+=======
+            
+            IDamageable rival = enemy.gameObject.GetComponent<IDamageable>();
+            rival.ReceiveDamage(new Damage(transform.position, slashList[slashNum].Damage, 0));
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
             
             IDamageable rival = enemy.gameObject.GetComponent<IDamageable>();
@@ -103,7 +113,11 @@ public class PlayerActions : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (Physics2D.OverlapBox(groundCheck.transform.position, new Vector2(0.49f,0.03f), 0, LayerMask.GetMask("Ground"))) //checks if set box overlaps with ground
+=======
+        if (Physics2D.OverlapBox(groundCheck.transform.position, new Vector2(0.49f,0.03f), 0, LayerMask.GetMask("Obstacles"))) //checks if set box overlaps with ground
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
         if (Physics2D.OverlapBox(groundCheck.transform.position, new Vector2(0.49f,0.03f), 0, LayerMask.GetMask("Obstacles"))) //checks if set box overlaps with ground
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -136,6 +150,10 @@ public class PlayerActions : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            Debug.Log("A");
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
             Debug.Log("A");
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db

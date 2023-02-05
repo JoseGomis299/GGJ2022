@@ -203,6 +203,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -211,6 +212,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -224,6 +227,9 @@ Transform:
   m_RootOrder: 3
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -260,7 +266,10 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -735,6 +744,9 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -858,7 +870,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 4
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_RootOrder: 4
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -951,12 +967,15 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalScale: {x: 15, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -968,6 +987,9 @@ Transform:
   m_RootOrder: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1112,7 +1134,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
+=======
+  m_RootOrder: 3
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_RootOrder: 3
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1139,7 +1165,11 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Layer: 8
+=======
+  m_Layer: 7
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_Layer: 7
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1170,11 +1200,14 @@ Rigidbody2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -1185,6 +1218,9 @@ Rigidbody2D:
   m_GravityScale: 5
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1263,7 +1299,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 0
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_RootOrder: 0
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1317,6 +1357,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   pushRecoverySpeed: 1
   immuneTime: 0.5
   ySpeed: 3.75
@@ -1326,6 +1367,8 @@ MonoBehaviour:
     m_Bits: 0
   moverDisplay: {fileID: 0}
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -1456,6 +1499,9 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1479,6 +1525,10 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  - component: {fileID: 1606236403}
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   - component: {fileID: 1606236403}
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1545,7 +1595,11 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Sprite: {fileID: -1376417661, guid: 5e9b16a78f8b8ab46a0c372dc217c5b1, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 8caeeccd945d0c24bba1312486f30302, type: 3}
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_Sprite: {fileID: 21300000, guid: 8caeeccd945d0c24bba1312486f30302, type: 3}
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1562,7 +1616,11 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Size: {x: 1, y: 1}
+=======
+  m_Size: {x: 10.8, y: 10.8}
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_Size: {x: 10.8, y: 10.8}
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1588,7 +1646,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 1.77, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: -0.05, y: 0, z: 0}
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_LocalPosition: {x: -0.05, y: 0, z: 0}
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1607,8 +1669,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Father: {fileID: 0}
   m_RootOrder: 2
+=======
+  - {fileID: 2928189}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   - {fileID: 2928189}
   m_Father: {fileID: 0}
@@ -1643,6 +1711,7 @@ Rigidbody2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1650,6 +1719,8 @@ Rigidbody2D:
   m_CollisionDetection: 0
   m_Constraints: 0
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -1662,6 +1733,9 @@ Rigidbody2D:
   m_Constraints: 4
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1683,6 +1757,7 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Offset: {x: 0, y: -0.24957243}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -1690,6 +1765,8 @@ BoxCollider2D:
     oldSize: {x: 2.0526712, y: 1.92}
     newSize: {x: 1, y: 1}
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -1702,6 +1779,9 @@ BoxCollider2D:
     newSize: {x: 10.8, y: 10.8}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1715,7 +1795,11 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Size: {x: 1, y: 1.4991448}
+=======
+  m_Size: {x: 0.5903085, y: 1.0273416}
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_Size: {x: 0.5903085, y: 1.0273416}
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1745,7 +1829,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Bits: 256
+=======
+    m_Bits: 128
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
     m_Bits: 128
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1907,7 +1995,10 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
@@ -1939,6 +2030,9 @@ MonoBehaviour:
   dashCoolDown: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -1990,7 +2084,11 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+=======
+  m_Icon: {fileID: 0}
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_Icon: {fileID: 0}
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
