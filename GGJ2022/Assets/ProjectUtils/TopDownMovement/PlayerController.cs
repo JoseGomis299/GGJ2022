@@ -7,8 +7,6 @@ using UnityEngine.UI;
     public class PlayerController : Mover
     {
 
-        public Slider slider;
-        
         private Vector3 _direction;
         private Vector3 _lastValidDirection;
         [Header("Cooldown")]
@@ -21,8 +19,13 @@ using UnityEngine.UI;
     public static PlayerController Instance;
         public bool recover = true;
 
+        public HealthBar healthBar;
+        
         private void Awake()
         {
+            
+            healthBar.SetMaxHealth((int)health);
+            
         if (Instance == null) Instance = this;
             _lastValidDirection = Vector3.right;
             animator = GetComponent<Animator>();
