@@ -10,6 +10,8 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] protected float speed = 4;
         [SerializeField] protected float airControl = 0.5f;
         [SerializeField] private LayerMask collisionLayer;
+        [SerializeField] protected bool canClimb;
+        [SerializeField] protected bool canDash;
         private Vector3 _moveDelta;
         private Rigidbody2D _rb;
         private RaycastHit2D _hit;
@@ -82,8 +84,7 @@ namespace ProjectUtils.TopDown2D
             }
             else
             {
-                Debug.Log(hit.point);
-                if (hit.transform.CompareTag("Climbable") && !grounded)
+                if (hit.transform.CompareTag("Climbable") && !grounded && canClimb)
                 {
                     climbingDirection = input.x;
                     _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.8f);
@@ -100,6 +101,7 @@ namespace ProjectUtils.TopDown2D
 
         protected void Dash(float dashForce, Vector3 direction)
         {
+            if(!canDash) return;
             if (direction != Vector3.zero) dashDirection = direction * dashForce;
             else
             {
