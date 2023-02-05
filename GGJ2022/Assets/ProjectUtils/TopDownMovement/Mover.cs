@@ -16,7 +16,7 @@ namespace ProjectUtils.TopDown2D
         public bool canDash;
         [SerializeField] private GameObject dashEcho;
         private Vector3 _moveDelta;
-        protected Rigidbody2D rb;
+        private Rigidbody2D _rb;
         private RaycastHit2D _hit;
         
         [Header("Attacking")]
@@ -29,11 +29,7 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] protected float jumpForce;
         private float _coyoteTime;
         private float _jumpBufferTime;
-<<<<<<< Updated upstream
         public bool grounded;
-=======
-        [SerializeField]protected bool grounded;
->>>>>>> Stashed changes
         
         private CapsuleCollider2D _capsuleCollider;
         protected float climbingDirection;
@@ -43,19 +39,14 @@ namespace ProjectUtils.TopDown2D
             if (TryGetComponent(out MeleeAttack meleeAttack)) this.meleeAttack = meleeAttack;
             if (TryGetComponent(out RangedAttack rangedAttack)) this.rangedAttack = rangedAttack;
 
-<<<<<<< Updated upstream
             _capsuleCollider = gameObject.GetComponent<CapsuleCollider2D>();
             _rb = GetComponent<Rigidbody2D>();
-=======
-            _boxCollider = gameObject.GetComponent<BoxCollider2D>();
-            rb = GetComponent<Rigidbody2D>();
->>>>>>> Stashed changes
             _jumpBufferTime = float.MinValue;
         }
 
         protected void UpdateMotor(Vector3 input)
         {
-            _moveDelta = new Vector3(input.x * speed, rb.velocity.y, 0);
+            _moveDelta = new Vector3(input.x * speed, _rb.velocity.y, 0);
 
             if (_moveDelta.x < 0)
             {
@@ -76,7 +67,7 @@ namespace ProjectUtils.TopDown2D
             if (Physics2D.CapsuleCast(new Vector2(transform.position.x,transform.position.y+_capsuleCollider.offset.y), _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f, collisionLayer) )
             {
                 grounded = true;
-                if (rb.velocity.y <= 0) _coyoteTime = Time.time;
+                if (_rb.velocity.y <= 0) _coyoteTime = Time.time;
             }
             else
             {
@@ -87,15 +78,9 @@ namespace ProjectUtils.TopDown2D
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right*input.x,  Mathf.Abs(transform.localScale.x/2)+0.1f, collisionLayer);
             if (hit.collider == null)
             {
-<<<<<<< Updated upstream
                 Vector3 targetVelocity = grounded ? _moveDelta : Vector2.Lerp(_rb.velocity, _moveDelta, Time.deltaTime * 20f * airControl);
                 _rb.velocity = (Vector2)targetVelocity;
                 if (climbingDirection != 0)
-=======
-                Vector3 targetVelocity = grounded ? _moveDelta : Vector2.Lerp(rb.velocity, _moveDelta, Time.deltaTime * 20f * airControl);
-                rb.velocity = (Vector2)targetVelocity;
-                if (_climbingDirection != 0)
->>>>>>> Stashed changes
                 {
                     climbingDirection = 0;
                 }
@@ -104,13 +89,8 @@ namespace ProjectUtils.TopDown2D
             {
                 if (hit.transform.CompareTag("Climbable") && !grounded && canClimb)
                 {
-<<<<<<< Updated upstream
                     climbingDirection = input.x;
                     _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.8f);
-=======
-                    _climbingDirection = _moveDelta.x;
-                    rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.8f);
->>>>>>> Stashed changes
                 }
                 else
                 {
@@ -150,11 +130,7 @@ namespace ProjectUtils.TopDown2D
                 _jumpBufferTime = Time.time;
                 return;
             }
-<<<<<<< Updated upstream
             _rb.velocity = new Vector2(climbingDirection != 0 ? -climbingDirection*force : _rb.velocity.x, force);
-=======
-            rb.velocity = new Vector2(_climbingDirection != 0 ? -_climbingDirection*force/4 : rb.velocity.x, force);
->>>>>>> Stashed changes
             _coyoteTime = float.MinValue;
         }
 

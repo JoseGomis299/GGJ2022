@@ -7,12 +7,7 @@ TagManager:
   - Climbable
   - Root
   - Ground
-<<<<<<< Updated upstream
   - Enemy
-=======
-  - Wall
-  - Climbable
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -22,11 +17,7 @@ TagManager:
   - UI
   - Obstacles
   - EnemyLayer
-<<<<<<< Updated upstream
   - Ball
-=======
-  - BulletLayer
->>>>>>> Stashed changes
   - 
   - 
   - 
