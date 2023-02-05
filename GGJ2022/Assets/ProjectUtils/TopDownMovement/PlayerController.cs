@@ -57,12 +57,17 @@ using UnityEngine.UI;
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
             {
-            PlayerActions playerActions = GetComponent<PlayerActions>();
-            playerActions.source.clip = playerActions.clipDash;
-            playerActions.source.loop = false;
-            playerActions.source.volume = playerActions.volumeDash;
-            playerActions.source.Play();
-                _lastDashTime = Time.time;
+            
+                if (canDash)
+                {
+                    PlayerActions playerActions = GetComponent<PlayerActions>();
+                    playerActions.source.clip = playerActions.clipDash;
+                    playerActions.source.loop = false;
+                    playerActions.source.volume = playerActions.volumeDash;
+                    playerActions.source.Play();
+
+                }
+            _lastDashTime = Time.time;
                 Dash(35f, _direction);
             }
 
@@ -87,7 +92,6 @@ using UnityEngine.UI;
             if(playerActions == null) return;
             if (playerActions.isPullingRoot || isReallyAtacking)
             {
-                Debug.Log("VAR");
                 _direction = new Vector3(0, 0, 0);
             }
 
@@ -111,7 +115,12 @@ using UnityEngine.UI;
         
         protected override void Death()
         {
-            animator.Play("Dead");
+        PlayerActions playerActions = GetComponent<PlayerActions>();
+        playerActions.source.clip = playerActions.clipScream;
+        playerActions.source.loop = false;
+        playerActions.source.volume = playerActions.volumeDeath;
+        playerActions.source.Play();
+        animator.Play("Dead");
         }
 
         

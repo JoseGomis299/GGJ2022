@@ -10,15 +10,24 @@ public class Ball : MonoBehaviour
     [SerializeField] private float dmg;
     public bool lanzada = false;
 
+    public AudioSource source;
+    public AudioClip clip;
+    public float volume = 0.3f;
+    public bool loop = false;
+
     private void Start()
     {
+        source = GameObject.FindGameObjectWithTag("Effects").GetComponent<AudioSource>();
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!lanzada) return;
-
+        source.clip = clip;
+        source.volume = 1;
+        source.loop = loop;
+        source.Play();
         IDamageable rival = collision.gameObject.GetComponent<IDamageable>();
         if (rival != null)
         {

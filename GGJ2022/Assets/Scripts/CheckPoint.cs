@@ -6,7 +6,7 @@ public class CheckPoint : MonoBehaviour
 {
     public bool reached;
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (!reached)
         {
