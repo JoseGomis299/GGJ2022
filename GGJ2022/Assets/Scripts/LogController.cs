@@ -10,7 +10,7 @@ public class LogController : MonoBehaviour, IDamageable
         if (transform.localRotation.z > 0)
         {
             if(transform.localRotation.z - dmg.damageAmount < 0) transform.localRotation = Quaternion.Euler(Vector3.zero);
-            else transform.Rotate(Vector3.forward*-dmg.damageAmount);
+            else transform.Rotate(Vector3.forward * (-dmg.damageAmount * 3));
         }
     }
 }

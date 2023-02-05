@@ -12,11 +12,11 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] protected float speed = 4;
         [SerializeField] protected float airControl = 0.5f;
         [SerializeField] private LayerMask collisionLayer;
-        public bool canClimb;
-        public bool canDash;
+        [SerializeField] public bool canClimb;
+        [SerializeField] public bool canDash;
         [SerializeField] private GameObject dashEcho;
         private Vector3 _moveDelta;
-        private Rigidbody2D _rb;
+        protected Rigidbody2D rb;
         private RaycastHit2D _hit;
         
         [Header("Attacking")]
@@ -40,13 +40,14 @@ namespace ProjectUtils.TopDown2D
             if (TryGetComponent(out RangedAttack rangedAttack)) this.rangedAttack = rangedAttack;
 
             _capsuleCollider = gameObject.GetComponent<CapsuleCollider2D>();
-            _rb = GetComponent<Rigidbody2D>();
+            rb = GetComponent<Rigidbody2D>();
             _jumpBufferTime = float.MinValue;
         }
 
         protected void UpdateMotor(Vector3 input)
         {
-            _moveDelta = new Vector3(input.x * speed, _rb.velocity.y, 0);
+
+            _moveDelta = new Vector3(input.x * speed, rb.velocity.y, 0);
 
             if (_moveDelta.x < 0)
             {
@@ -67,7 +68,7 @@ namespace ProjectUtils.TopDown2D
             if (Physics2D.CapsuleCast(new Vector2(transform.position.x,transform.position.y+_capsuleCollider.offset.y), _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f, collisionLayer) )
             {
                 grounded = true;
-                if (_rb.velocity.y <= 0) _coyoteTime = Time.time;
+                if (rb.velocity.y <= 0) _coyoteTime = Time.time;
             }
             else
             {
@@ -78,8 +79,8 @@ namespace ProjectUtils.TopDown2D
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right*input.x,  Mathf.Abs(transform.localScale.x/2)+0.1f, collisionLayer);
             if (hit.collider == null)
             {
-                Vector3 targetVelocity = grounded ? _moveDelta : Vector2.Lerp(_rb.velocity, _moveDelta, Time.deltaTime * 20f * airControl);
-                _rb.velocity = (Vector2)targetVelocity;
+                Vector3 targetVelocity = grounded ? _moveDelta : Vector2.Lerp(rb.velocity, _moveDelta, Time.deltaTime * 20f * airControl);
+                rb.velocity = (Vector2)targetVelocity;
                 if (climbingDirection != 0)
                 {
                     climbingDirection = 0;
@@ -90,7 +91,7 @@ namespace ProjectUtils.TopDown2D
                 if (hit.transform.CompareTag("Climbable") && !grounded && canClimb)
                 {
                     climbingDirection = input.x;
-                    _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.8f);
+                    rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.8f);
                 }
                 else
                 {
@@ -130,9 +131,20 @@ namespace ProjectUtils.TopDown2D
                 _jumpBufferTime = Time.time;
                 return;
             }
-            _rb.velocity = new Vector2(climbingDirection != 0 ? -climbingDirection*force : _rb.velocity.x, force);
+            rb.velocity = new Vector2(climbingDirection != 0 ? -climbingDirection*force : rb.velocity.x, force);
+
+            GetComponent<Animator>().SetBool("isJumping", true);
+            StartCoroutine(recoverTime());
+
             _coyoteTime = float.MinValue;
         }
+
+        private IEnumerator recoverTime()
+        {
+            yield return new WaitForSeconds(0.1f);
+            GetComponent<PlayerController>().recover = true;
+        }
+
 
         private void OnDrawGizmos()
         {

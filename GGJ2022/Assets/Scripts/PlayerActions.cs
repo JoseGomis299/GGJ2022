@@ -107,6 +107,12 @@ public class PlayerActions : MonoBehaviour
 
     }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Pincho"))
+        {
+            GetComponent<PlayerController>().ReceiveDamage(new Damage(Vector2.zero,100000,0));
+        }
+    }
 
 }
