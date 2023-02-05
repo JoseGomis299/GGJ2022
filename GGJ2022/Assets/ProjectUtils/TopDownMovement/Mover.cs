@@ -46,10 +46,7 @@ namespace ProjectUtils.TopDown2D
 
         protected void UpdateMotor(Vector3 input)
         {
-<<<<<<< HEAD
-          
-=======
->>>>>>> main
+
             _moveDelta = new Vector3(input.x * speed, rb.velocity.y, 0);
 
             if (_moveDelta.x < 0)
@@ -135,11 +132,10 @@ namespace ProjectUtils.TopDown2D
                 return;
             }
             rb.velocity = new Vector2(climbingDirection != 0 ? -climbingDirection*force : rb.velocity.x, force);
-<<<<<<< HEAD
+
             GetComponent<Animator>().SetBool("isJumping", true);
             StartCoroutine(recoverTime());
-=======
->>>>>>> main
+
             _coyoteTime = float.MinValue;
         }
 
