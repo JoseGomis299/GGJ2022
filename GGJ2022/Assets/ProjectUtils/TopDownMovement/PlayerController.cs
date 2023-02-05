@@ -47,11 +47,8 @@ using UnityEngine;
 
             if (Input.GetMouseButtonDown(0))
             {
-<<<<<<< HEAD
                 ReceiveDamage(new Damage(Vector3.zero, 10,0));
-=======
 
->>>>>>> uwu
             }
 
             if (Input.GetMouseButtonDown(1))
