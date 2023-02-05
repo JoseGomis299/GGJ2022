@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8caeeccd945d0c24bba1312486f30302
+guid: d6039cb2f51d26d43abd36c29854fd46
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrancar_0
+      name: lanzar_0
       rect:
         serializedVersion: 2
         x: 201
-        y: 15
-        width: 634
-        height: 792
+        y: 0
+        width: 652
+        height: 917
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bd74775b0eaeac4c8692d1e0f83f714
-      internalID: 2059396410
+      spriteID: b8cf41561eabbf943bc8998e43d3f22c
+      internalID: -1854309035
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      arrancar_0: 2059396410
+      lanzar_0: -1854309035
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
