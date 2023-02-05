@@ -9,6 +9,10 @@ public class Ball : MonoBehaviour
     [SerializeField]
     private float dmg;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    public bool lanzada;
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
     public bool lanzada;
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -21,7 +25,13 @@ public class Ball : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(collision.transform.tag == "Ground")
+=======
+
+        Debug.Log(collision.transform.CompareTag("Ground"));
+        if(collision.transform.tag == "Ground" && lanzada)
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 
         Debug.Log(collision.transform.CompareTag("Ground"));
@@ -33,14 +43,20 @@ public class Ball : MonoBehaviour
         
             IDamageable rival = collision.gameObject.GetComponent<IDamageable>();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (rival != null)
         {
             rival.ReceiveDamage(new Damage(transform.position, dmg, 0));
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
         if (rival != null && lanzada)
         {
             rival.ReceiveDamage(new Damage(transform.position, dmg, 0));
             Destroy(gameObject);
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
         }
 

@@ -13,6 +13,10 @@ public class GrabbingScript : StateMachineBehaviour
     {
     instance =   animator.gameObject.GetComponent<PlayerActions>();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        lanzando = false;
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
         lanzando = false;
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -22,6 +26,11 @@ public class GrabbingScript : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        
+
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
         
 
@@ -44,8 +53,14 @@ public class GrabbingScript : StateMachineBehaviour
             instance.objGrabbed.GetComponent<Rigidbody2D>().sleepMode = RigidbodySleepMode2D.NeverSleep;
             instance.objGrabbed.GetComponent<CircleCollider2D>().enabled = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
             instance.objGrabbed.GetComponent<Rigidbody2D>().AddForce(instance.transform.GetChild(0).up * instance .trajectory._force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
             instance.objGrabbed.GetComponent<Ball>().enabled = true;
+=======
+            instance.objGrabbed.GetComponent<Ball>().lanzada = true;
+            instance.objGrabbed.transform.parent = null;
+            instance.objGrabbed.GetComponent<Rigidbody2D>().AddForce(instance.transform.GetChild(0).up * instance.trajectory._force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
             instance.objGrabbed.GetComponent<Ball>().lanzada = true;
             instance.objGrabbed.transform.parent = null;
@@ -56,13 +71,19 @@ public class GrabbingScript : StateMachineBehaviour
             animator.SetTrigger("throwExit");
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 
         if (!instance.objGrabbed.GetComponent<Ball>().lanzada)
         {
             Debug.Log("A");
             instance.objGrabbed.transform.localPosition = new Vector3(0, 0, 0);
         }
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
     }
 
