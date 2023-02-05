@@ -2,8 +2,11 @@ using ProjectUtils.Attacking;
 using ProjectUtils.ObjectPooling;
 using ProjectUtils.TopDown2D;
 using UnityEngine;
+using UnityEngine.UI;
+
     public class PlayerController : Mover
     {
+
         private Vector3 _direction;
         private Vector3 _lastValidDirection;
         [Header("Cooldown")]
@@ -16,9 +19,14 @@ using UnityEngine;
     public static PlayerController Instance;
         public bool recover = true;
 
+        [SerializeField] private HealthBar healthBar;
+        
         private void Awake()
         {
-        if (Instance == null) Instance = this;
+            
+            healthBar.SetMaxHealth(maxHealth/maxHealth);
+
+            if (Instance == null) Instance = this;
             _lastValidDirection = Vector3.right;
             animator = GetComponent<Animator>();
             playerActions = gameObject.GetComponent<PlayerActions>();
@@ -26,7 +34,9 @@ using UnityEngine;
 
         public void Update()
         {
-        
+
+            healthBar.SetHealth(health/maxHealth);
+            
             if (grounded  && recover)
             {
                 animator.SetBool("isJumping", false);
