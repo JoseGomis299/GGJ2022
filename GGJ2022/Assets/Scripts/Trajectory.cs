@@ -54,7 +54,6 @@ public class Trajectory : MonoBehaviour
         GameObject sphere = Instantiate(this.sphere, transform.position + transform.up, Quaternion.identity); //Offset spawn position to come out of the end of the cannon
         Rigidbody2D sphereRB = sphere.GetComponent<Rigidbody2D>();
         sphereRB.AddForce(playerActions.GrabPoint.up * _force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
-        Debug.Log(sphereRB.velocity);
     }
 
     public void DrawTrajectory()

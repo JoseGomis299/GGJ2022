@@ -23,7 +23,10 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("A");
         if (!lanzada) return;
+        Debug.Log("B");
+
         source.clip = clip;
         source.volume = 1;
         source.loop = loop;
@@ -43,8 +46,15 @@ public class Ball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (!lanzada) return;
+        Debug.Log("A");
 
+        if (!lanzada) return;
+        Debug.Log("B");
+
+        source.clip = clip;
+        source.volume = 1;
+        source.loop = loop;
+        source.Play();
         IDamageable rival = col.gameObject.GetComponent<IDamageable>();
         if (rival != null)
         {
