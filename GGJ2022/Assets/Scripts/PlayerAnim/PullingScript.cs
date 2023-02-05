@@ -9,7 +9,7 @@ public class PullingScript : StateMachineBehaviour
     private Trajectory trajectory;
 
     private CameraShake cameraShake;
-    
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -18,6 +18,11 @@ public class PullingScript : StateMachineBehaviour
 
         instance.root.currentTime = instance.root.pullTime;
         cameraShake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
+        instance.source.clip = instance.clipShake;
+        instance.source.volume = instance.volumeShake;
+        instance.source.loop = true;
+        instance.source.Play();
+
 
     }
 
@@ -53,10 +58,10 @@ public class PullingScript : StateMachineBehaviour
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        instance.source.Stop();
+    }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
