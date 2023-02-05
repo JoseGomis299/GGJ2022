@@ -17,6 +17,8 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        Debug.Log(collision.transform.CompareTag("Ground"));
         if(collision.transform.tag == "Ground" && lanzada)
         {
             Destroy(gameObject, 0.5f);

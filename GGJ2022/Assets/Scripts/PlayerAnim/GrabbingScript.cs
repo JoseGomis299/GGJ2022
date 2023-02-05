@@ -12,6 +12,7 @@ public class GrabbingScript : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
     instance =   animator.gameObject.GetComponent<PlayerActions>();
+        lanzando = false;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -37,7 +38,8 @@ public class GrabbingScript : StateMachineBehaviour
             instance.objGrabbed.GetComponent<Rigidbody2D>().sleepMode = RigidbodySleepMode2D.NeverSleep;
             instance.objGrabbed.GetComponent<CircleCollider2D>().enabled = true;
             instance.objGrabbed.GetComponent<Ball>().lanzada = true;
-            instance.objGrabbed.GetComponent<Rigidbody2D>().AddForce(instance.transform.GetChild(0).up * instance .trajectory._force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
+            instance.objGrabbed.transform.parent = null;
+            instance.objGrabbed.GetComponent<Rigidbody2D>().AddForce(instance.transform.GetChild(0).up * instance.trajectory._force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
             instance.objGrabbed = null;
             Debug.Log("Throwing");
             animator.SetTrigger("throwExit");
