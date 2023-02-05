@@ -19,14 +19,14 @@ using UnityEngine.UI;
     public static PlayerController Instance;
         public bool recover = true;
 
-        public HealthBar healthBar;
+        [SerializeField] private HealthBar healthBar;
         
         private void Awake()
         {
             
-            healthBar.SetMaxHealth((int)health);
-            
-        if (Instance == null) Instance = this;
+            healthBar.SetMaxHealth(maxHealth/maxHealth);
+
+            if (Instance == null) Instance = this;
             _lastValidDirection = Vector3.right;
             animator = GetComponent<Animator>();
             playerActions = gameObject.GetComponent<PlayerActions>();
@@ -34,7 +34,9 @@ using UnityEngine.UI;
 
         public void Update()
         {
-        
+
+            healthBar.SetHealth(health/maxHealth);
+            
             if (grounded  && recover)
             {
                 animator.SetBool("isJumping", false);
