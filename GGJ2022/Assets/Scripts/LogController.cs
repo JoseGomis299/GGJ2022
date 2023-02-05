@@ -17,7 +17,8 @@ public class LogController : MonoBehaviour, IDamageable
         source.Play();
         if (transform.localRotation.z > 0)
         {
-            if (transform.localRotation.z - dmg.damageAmount < 0) transform.localRotation = Quaternion.Euler(Vector3.zero);
+
+            if(transform.localRotation.z - dmg.damageAmount < 0) transform.localRotation = Quaternion.Euler(Vector3.zero);
             else transform.Rotate(Vector3.forward * (-dmg.damageAmount * 3));
         }
     }
