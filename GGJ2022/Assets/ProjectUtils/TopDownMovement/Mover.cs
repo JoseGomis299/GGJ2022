@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using ProjectUtils.Attacking;
+using ProjectUtils.ObjectPooling;
 using UnityEngine;
 
 namespace ProjectUtils.TopDown2D
@@ -10,6 +12,9 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] protected float speed = 4;
         [SerializeField] protected float airControl = 0.5f;
         [SerializeField] private LayerMask collisionLayer;
+        public bool canClimb;
+        public bool canDash;
+        [SerializeField] private GameObject dashEcho;
         private Vector3 _moveDelta;
         private Rigidbody2D _rb;
         private RaycastHit2D _hit;
@@ -24,17 +29,17 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] protected float jumpForce;
         private float _coyoteTime;
         private float _jumpBufferTime;
-        protected bool grounded;
+        public bool grounded;
         
-        private BoxCollider2D _boxCollider;
-        private float _climbingDirection;
+        private CapsuleCollider2D _capsuleCollider;
+        protected float climbingDirection;
 
         protected void Start()
         {
             if (TryGetComponent(out MeleeAttack meleeAttack)) this.meleeAttack = meleeAttack;
             if (TryGetComponent(out RangedAttack rangedAttack)) this.rangedAttack = rangedAttack;
 
-            _boxCollider = gameObject.GetComponent<BoxCollider2D>();
+            _capsuleCollider = gameObject.GetComponent<CapsuleCollider2D>();
             _rb = GetComponent<Rigidbody2D>();
             _jumpBufferTime = float.MinValue;
         }
@@ -59,7 +64,7 @@ namespace ProjectUtils.TopDown2D
             dashDirection = Vector3.Lerp(dashDirection, Vector3.zero, Time.fixedDeltaTime / 0.075f);
 
             //Check if grounded
-            if (Physics2D.BoxCast(transform.position, _boxCollider.size,0,Vector2.down, 0.1f, collisionLayer) )
+            if (Physics2D.CapsuleCast(new Vector2(transform.position.x,transform.position.y+_capsuleCollider.offset.y), _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f, collisionLayer) )
             {
                 grounded = true;
                 if (_rb.velocity.y <= 0) _coyoteTime = Time.time;
@@ -70,27 +75,26 @@ namespace ProjectUtils.TopDown2D
             }
 
             //Check if colliding with wall
-            RaycastHit2D hit = Physics2D.BoxCast(transform.position, _boxCollider.size, 0, new Vector2(input.x, 0),
-                Mathf.Abs(input.x * speed* Time.fixedDeltaTime), collisionLayer);
-            if (hit == false)
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right*input.x,  Mathf.Abs(transform.localScale.x/2)+0.1f, collisionLayer);
+            if (hit.collider == null)
             {
                 Vector3 targetVelocity = grounded ? _moveDelta : Vector2.Lerp(_rb.velocity, _moveDelta, Time.deltaTime * 20f * airControl);
                 _rb.velocity = (Vector2)targetVelocity;
-                if (_climbingDirection != 0)
+                if (climbingDirection != 0)
                 {
-                    _climbingDirection = 0;
+                    climbingDirection = 0;
                 }
             }
             else
             {
-                if (hit.transform.CompareTag("Climbable") && !grounded)
+                if (hit.transform.CompareTag("Climbable") && !grounded && canClimb)
                 {
-                    _climbingDirection = _moveDelta.x;
+                    climbingDirection = input.x;
                     _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.8f);
                 }
                 else
                 {
-                    _climbingDirection = 0;
+                    climbingDirection = 0;
                 }
             }
 
@@ -100,31 +104,43 @@ namespace ProjectUtils.TopDown2D
 
         protected void Dash(float dashForce, Vector3 direction)
         {
+            if(!canDash) return;
             if (direction != Vector3.zero) dashDirection = direction * dashForce;
             else
             {
                 dashDirection = new Vector3(transform.localScale.x, 0, 0) * dashForce;
             }
+
+            if (dashEcho != null) StartCoroutine(dashDisplay());
+        }
+
+        private IEnumerator dashDisplay()
+        {
+            while (Mathf.Abs(dashDirection.x) > 1f)
+            {
+                ObjectPool.Instance.InstantiateFromPool(dashEcho, transform.position, Quaternion.identity, true);
+                yield return new WaitForSeconds(0.01f);
+            }
         }
 
         protected void Jump(float force)
         {
-            if (!grounded && Time.time - _coyoteTime > 0.15f && _climbingDirection == 0)
+            if (!grounded && Time.time - _coyoteTime > 0.15f && climbingDirection == 0)
             {
                 _jumpBufferTime = Time.time;
                 return;
             }
-            _rb.velocity = new Vector2(_climbingDirection != 0 ? -_climbingDirection*force/4 : _rb.velocity.x, force);
+            _rb.velocity = new Vector2(climbingDirection != 0 ? -climbingDirection*force : _rb.velocity.x, force);
             _coyoteTime = float.MinValue;
         }
-
-
 
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
-            if(_boxCollider == null) return;
-            Gizmos.DrawWireCube(new Vector3(transform.position.x, transform.position.y - 0.1f,0), _boxCollider.size );
+            if(_capsuleCollider == null) return;
+            Gizmos.DrawWireCube(new Vector3(transform.position.x, transform.position.y - 0.1f,0), _capsuleCollider.size );
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(new Vector3(transform.position.x+0.2f*transform.localScale.x, transform.position.y, 0), _capsuleCollider.size.x/2);
         }
     }
 }
