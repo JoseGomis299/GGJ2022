@@ -14,6 +14,10 @@ public class GrabbingScript : StateMachineBehaviour
     instance =   animator.gameObject.GetComponent<PlayerActions>();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        lanzando = false;
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
         lanzando = false;
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -27,6 +31,11 @@ public class GrabbingScript : StateMachineBehaviour
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        
+
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
         
 
@@ -54,8 +63,14 @@ public class GrabbingScript : StateMachineBehaviour
             instance.objGrabbed.GetComponent<CircleCollider2D>().enabled = true;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             instance.objGrabbed.GetComponent<Rigidbody2D>().AddForce(instance.transform.GetChild(0).up * instance .trajectory._force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
             instance.objGrabbed.GetComponent<Ball>().enabled = true;
+=======
+            instance.objGrabbed.GetComponent<Ball>().lanzada = true;
+            instance.objGrabbed.transform.parent = null;
+            instance.objGrabbed.GetComponent<Rigidbody2D>().AddForce(instance.transform.GetChild(0).up * instance.trajectory._force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
             instance.objGrabbed.GetComponent<Ball>().lanzada = true;
             instance.objGrabbed.transform.parent = null;
@@ -72,7 +87,10 @@ public class GrabbingScript : StateMachineBehaviour
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 
@@ -82,6 +100,9 @@ public class GrabbingScript : StateMachineBehaviour
             instance.objGrabbed.transform.localPosition = new Vector3(0, 0, 0);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db

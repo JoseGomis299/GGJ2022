@@ -6137,6 +6137,7 @@ Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Ico
 Received Import Request.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Time since last request: 0.000031 seconds.
   path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone_Influence.png
   artifactKey: Guid(e92fc44f12c21dd44a49e390f39f7ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -6294,6 +6295,8 @@ AssetImportParameters requested are different than current active one (requested
 =======
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   Time since last request: 0.000023 seconds.
   path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Visibility_Tool@3x.png
   artifactKey: Guid(ec23e33668eecff4aaec16f735dcc204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -6302,6 +6305,10 @@ Editor requested this worker to shutdown with reason: Scaling down because of id
 AssetImportWorker is now disconnected from the server
 Process exiting
 <<<<<<< HEAD
+<<<<<<< HEAD
+Exiting without the bug reporter. Application will terminate with return code 0
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 Exiting without the bug reporter. Application will terminate with return code 0
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======

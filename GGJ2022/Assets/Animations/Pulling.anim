@@ -18,6 +18,7 @@ AnimationClip:
   m_ScaleCurves: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_FloatCurves:
   - curve:
       serializedVersion: 2
@@ -80,6 +81,8 @@ AnimationClip:
 =======
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
@@ -90,6 +93,9 @@ AnimationClip:
     classID: 212
     script: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -102,6 +108,7 @@ AnimationClip:
     genericBindings:
     - serializedVersion: 2
       path: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       attribute: 2526845255
@@ -127,6 +134,8 @@ AnimationClip:
 =======
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -135,6 +144,9 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 21300000, guid: 8caeeccd945d0c24bba1312486f30302, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
+=======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -145,7 +157,11 @@ AnimationClip:
     m_StartTime: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_StopTime: 0
+=======
+    m_StopTime: 0.016666668
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
     m_StopTime: 0.016666668
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
@@ -166,6 +182,7 @@ AnimationClip:
     m_KeepOriginalPositionXZ: 0
     m_HeightFromFeet: 0
     m_Mirror: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_EditorCurves:
@@ -226,6 +243,9 @@ AnimationClip:
     path: 
     classID: 212
     script: {fileID: 0}
+=======
+  m_EditorCurves: []
+>>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
 =======
   m_EditorCurves: []
 >>>>>>> 508a3ebf5ab3f635220f62675f44fd78b5fa40db
