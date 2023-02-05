@@ -14,7 +14,10 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] private LayerMask collisionLayer;
         [SerializeField] protected bool canClimb;
         [SerializeField] protected bool canDash;
+<<<<<<< Updated upstream
         [SerializeField] private GameObject dashEcho;
+=======
+>>>>>>> Stashed changes
         private Vector3 _moveDelta;
         private Rigidbody2D _rb;
         private RaycastHit2D _hit;
@@ -64,7 +67,11 @@ namespace ProjectUtils.TopDown2D
             dashDirection = Vector3.Lerp(dashDirection, Vector3.zero, Time.fixedDeltaTime / 0.075f);
 
             //Check if grounded
+<<<<<<< Updated upstream
             if (Physics2D.CapsuleCast(new Vector2(transform.position.x+_capsuleCollider.offset.x,transform.position.y+_capsuleCollider.offset.y), _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f) )
+=======
+            if (Physics2D.CapsuleCast(transform.position, _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f) )
+>>>>>>> Stashed changes
             {
                 grounded = true;
                 if (_rb.velocity.y <= 0) _coyoteTime = Time.time;
