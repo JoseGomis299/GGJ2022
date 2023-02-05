@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8caeeccd945d0c24bba1312486f30302
+guid: 838364a09d1470b41929a6d430de0062
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrancar_0
+      name: IDLE SPRITES_0
       rect:
         serializedVersion: 2
-        x: 201
-        y: 15
-        width: 634
-        height: 792
+        x: 199
+        y: 14
+        width: 718
+        height: 875
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bd74775b0eaeac4c8692d1e0f83f714
-      internalID: 2059396410
+      spriteID: b30cec897d5d688409baa84a4e21ba3f
+      internalID: 338907356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE SPRITES_1
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 14
+        width: 734
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43a7b420bb8d0a4a9cd02dd171b3a8d
+      internalID: 327912415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE SPRITES_2
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 14
+        width: 718
+        height: 875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375206c1f4b7ef44e8f18e799d08e210
+      internalID: -1169922841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE SPRITES_3
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 14
+        width: 734
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b340e572258fd794aa179b4461771ad2
+      internalID: -944295535
       vertices: []
       indices: 
       edges: []
@@ -148,7 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      arrancar_0: 2059396410
+      IDLE SPRITES_1: 327912415
+      IDLE SPRITES_3: -944295535
+      IDLE SPRITES_2: -1169922841
+      IDLE SPRITES_0: 338907356
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

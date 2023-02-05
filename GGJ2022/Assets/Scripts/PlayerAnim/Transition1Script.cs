@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class Transition1Script : StateMachineBehaviour
 {
+    private PlayerController controller;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //
-    //}
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        controller = animator.transform.GetComponent<PlayerController>();
+    }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+
         if (animator.gameObject.GetComponent<PlayerActions>().isAttacking && animator.gameObject.GetComponent<PlayerActions>().hitEnemy)
         {
             Debug.Log("Ataque2");
             PlayerActions instance = animator.gameObject.GetComponent<PlayerActions>();
+
             instance.Slash(2, "Slash2");
         }
     }
@@ -24,7 +27,13 @@ public class Transition1Script : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-            animator.gameObject.GetComponent<PlayerActions>().isAttacking = false;
+        controller.isReallyAtacking = false;
+
+        PlayerActions instance = animator.gameObject.GetComponent<PlayerActions>();
+
+        animator.gameObject.GetComponent<PlayerActions>().isAttacking = false;
+
+
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

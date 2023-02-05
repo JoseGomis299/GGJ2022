@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8caeeccd945d0c24bba1312486f30302
+guid: 59535b99f3c14a3428e38e41700272be
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrancar_0
+      name: IDLE UP SPRITES_0
       rect:
         serializedVersion: 2
-        x: 201
-        y: 15
-        width: 634
-        height: 792
+        x: 163
+        y: 14
+        width: 754
+        height: 875
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bd74775b0eaeac4c8692d1e0f83f714
-      internalID: 2059396410
+      spriteID: fff9eea15ea42ab43b421d0c18e12c9b
+      internalID: -1629441208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE UP SPRITES_1
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 14
+        width: 754
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751a161b435dae045844fee384c550e4
+      internalID: -1345507306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE UP SPRITES_2
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 14
+        width: 754
+        height: 875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf54243b5be8f0243b75bc3f1cf906b4
+      internalID: 418937020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE UP SPRITES_3
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 14
+        width: 754
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd477890f3f50c64f80fb4537a310603
+      internalID: 159698672
       vertices: []
       indices: 
       edges: []
@@ -148,7 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      arrancar_0: 2059396410
+      IDLE UP SPRITES_1: -1345507306
+      IDLE UP SPRITES_2: 418937020
+      IDLE UP SPRITES_0: -1629441208
+      IDLE UP SPRITES_3: 159698672
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

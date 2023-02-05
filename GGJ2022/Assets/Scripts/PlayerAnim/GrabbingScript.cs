@@ -6,48 +6,46 @@ public class GrabbingScript : StateMachineBehaviour
 {
 
     private PlayerActions instance;
-    private bool lanzando = false;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-    instance =   animator.gameObject.GetComponent<PlayerActions>();
-        lanzando = false;
+        instance =   animator.gameObject.GetComponent<PlayerActions>();
+        
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
 
-        if (Input.GetKeyDown("z"))
+
+        if (Input.GetKeyDown("q"))
         {
-            lanzando = true;
+            instance.lanzandoBola = true;
            
         }
-        if (Input.GetKey("z") && lanzando)
+        if (Input.GetKey("q") && instance.lanzandoBola)
         {
             instance.GetComponent<LineRenderer>().enabled = true;
-            instance.objGrabbed.GetComponent<CircleCollider2D>().enabled = false;
             instance.trajectory.DrawTrajectory();
             instance.trajectory.Movements();
         }
-        if (Input.GetKeyUp("z") && lanzando)
+        if (Input.GetKeyUp("q") && instance.lanzandoBola)
         {
+            instance.lanzandoBola = false;
             instance.GetComponent<LineRenderer>().enabled = false;
-            instance.objGrabbed.GetComponent<Rigidbody2D>().sleepMode = RigidbodySleepMode2D.NeverSleep;
-            instance.objGrabbed.GetComponent<CircleCollider2D>().enabled = true;
-            instance.objGrabbed.GetComponent<Ball>().lanzada = true;
-            instance.objGrabbed.transform.SetParent(null);
-            instance.objGrabbed.GetComponent<Rigidbody2D>().AddForce(instance.transform.GetChild(0).up * instance.trajectory._force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
+            Destroy(instance.objGrabbed);
             instance.objGrabbed = null;
-            Debug.Log("Throwing");
+            instance.trajectory.Shoot();
+            //instance.objGrabbed.GetComponent<Rigidbody2D>().AddForce(instance.gameObject.GetComponent<PlayerActions>().GrabPoint.up * instance.trajectory._force); //Add Force to instantiated object. FixedDeltaTime will need to be equated either here via ForceMode or in Velocity. You choose.
+            //Debug.Log("Throwing");
             animator.SetTrigger("throwExit");
         }
 
-        if (instance.objGrabbed == null || instance.objGrabbed.GetComponent<Ball>().lanzada) return;
-        
-        instance.objGrabbed.transform.localPosition = new Vector3(0, 0, 0);
+        //if (instance.objGrabbed == null || instance.objGrabbed.GetComponent<Ball>().lanzada) return;
+        //instance.GrabPoint.transform.position = new Vector3(instance.GrabOffset.transform.position.x,
+        //    instance.GrabOffset.transform.position.y, instance.GrabOffset.transform.position.z);
+        //instance.objGrabbed.transform.localPosition = new Vector3(0,0,0);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
