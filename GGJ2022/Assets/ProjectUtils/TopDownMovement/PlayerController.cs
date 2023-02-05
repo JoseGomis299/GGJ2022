@@ -9,37 +9,32 @@ using UnityEngine;
         [Header("Cooldown")]
         [SerializeField] private float dashCoolDown;
         private float _lastDashTime;
-    public bool isReallyAtacking;
-        private Animator animator;
-    private PlayerActions playerActions;
+        
         private void Awake()
         {
             _lastValidDirection = Vector3.right;
-            animator = GetComponent<Animator>();
-            playerActions = gameObject.GetComponent<PlayerActions>();
         }
 
-    public void Update()
-    {
+        void Update()
+        {
             float x = Input.GetAxisRaw("Horizontal");
             _direction = new Vector3(x, 0, 0);
 
-            if (_direction != Vector3.zero)
-            {
-                gameObject.GetComponent<Animator>().SetBool("onWalking", true);
-                _lastValidDirection = _direction;
-            }
-            else
-                gameObject.GetComponent<Animator>().SetBool("onWalking", false);
+        if (_direction != Vector3.zero)
+        {
+            gameObject.GetComponent<Animator>().SetBool("onWalking",true);
+            _lastValidDirection = _direction;
+        }else
+            gameObject.GetComponent<Animator>().SetBool("onWalking", false);
 
 
 
-            if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
             {
                 _lastDashTime = Time.time;
                 Dash(35f, _direction);
             }
-
+            
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Jump(jumpForce);
@@ -47,11 +42,7 @@ using UnityEngine;
 
             if (Input.GetMouseButtonDown(0))
             {
-<<<<<<< HEAD
                 ReceiveDamage(new Damage(Vector3.zero, 10,0));
-=======
-
->>>>>>> uwu
             }
 
             if (Input.GetMouseButtonDown(1))
@@ -61,13 +52,9 @@ using UnityEngine;
                     meleeAttack.AttackCircle(_lastValidDirection, 30, 30, gameObject.GetInstanceID());
                 }
             }
-
-        if (playerActions.isPullingRoot || isReallyAtacking)
-        {
-            _direction = new Vector3(0, 0, 0);
+            
         }
 
-    }
         private void FixedUpdate()
         {
             UpdateMotor(_direction);

@@ -19,11 +19,8 @@ public class PlayerActions : MonoBehaviour
     public bool hitEnemy = false;
 
     [Header("Root Extractor")]
-    public Transform GrabPoint;
-    public Transform GrabOffset;
     public Root root;
     public bool isPullingRoot;
-    public bool lanzandoBola = false;
     public GameObject objGrabbed;
     public Trajectory trajectory;
 
@@ -41,7 +38,7 @@ public class PlayerActions : MonoBehaviour
 
     private void ExtractRoot()
     {
-        if (Input.GetKeyDown("q") && !isPullingRoot && isInGround() && root != null && objGrabbed == null && !isAttacking)
+        if (Input.GetKeyDown("z") && !isPullingRoot && isInGround() && root != null && objGrabbed == null && !isAttacking)
         {
             isPullingRoot = true;
         }

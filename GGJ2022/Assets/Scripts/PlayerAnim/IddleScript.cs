@@ -13,6 +13,7 @@ public class IddleScript : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+
         if (animator.gameObject.GetComponent<PlayerActions>().isPullingRoot)
         {
             PlayerActions instance = animator.gameObject.GetComponent<PlayerActions>();
@@ -30,7 +31,6 @@ public class IddleScript : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.gameObject.GetComponent<PlayerActions>().isAttacking = false;
-        PlayerActions instance = animator.gameObject.GetComponent<PlayerActions>();
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
