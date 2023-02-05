@@ -56,7 +56,6 @@ using UnityEngine;
             {
                 if (meleeAttack != null)
                 {
-                    meleeAttack.AttackCircle(_lastValidDirection, 30, 30, gameObject.GetInstanceID());
                 }
             }
 
