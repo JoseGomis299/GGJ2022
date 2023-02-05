@@ -47,12 +47,17 @@ using UnityEngine;
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
             {
-            PlayerActions playerActions = GetComponent<PlayerActions>();
-            playerActions.source.clip = playerActions.clipDash;
-            playerActions.source.loop = false;
-            playerActions.source.volume = playerActions.volumeDash;
-            playerActions.source.Play();
-                _lastDashTime = Time.time;
+            
+                if (canDash)
+                {
+                    PlayerActions playerActions = GetComponent<PlayerActions>();
+                    playerActions.source.clip = playerActions.clipDash;
+                    playerActions.source.loop = false;
+                    playerActions.source.volume = playerActions.volumeDash;
+                    playerActions.source.Play();
+
+                }
+            _lastDashTime = Time.time;
                 Dash(35f, _direction);
             }
 
@@ -77,7 +82,6 @@ using UnityEngine;
             if(playerActions == null) return;
             if (playerActions.isPullingRoot || isReallyAtacking)
             {
-                Debug.Log("VAR");
                 _direction = new Vector3(0, 0, 0);
             }
 
