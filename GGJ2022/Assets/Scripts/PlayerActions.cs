@@ -30,8 +30,12 @@ public class PlayerActions : MonoBehaviour
     public AudioSource source;
     public AudioClip clipShake;
     public AudioClip clipDash;
+    public AudioClip clipScream;
+    public AudioClip clipHit;
     public float volumeShake = 1;
     public float volumeDash = 1;
+    public float volumeDeath = 1;
+    public float volumeHit = 1;
 
 
     private void Start()
@@ -65,8 +69,20 @@ public class PlayerActions : MonoBehaviour
     public void Slash(int slashNum,string slashName)
     {
         slashNum -= 1;
-        hitEnemy = false;
+
         Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(slashList[slashNum].AttackPoint.position, slashList[slashNum].AttackRange / 2, 0f, enemyLayer);
+        if(hitEnemies.Length > 0)
+        {
+            source.clip = clipHit;
+        }
+        else
+        {
+            source.clip = clipDash;
+        }
+
+        source.volume = 1;
+        source.loop = false;
+        source.Play();
         foreach (Collider2D enemy in hitEnemies)
         {
             

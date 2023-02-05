@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Enemy
   - Pincho
+  - Effects
   layers:
   - Default
   - TransparentFX

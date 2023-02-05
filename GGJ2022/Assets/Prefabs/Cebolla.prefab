@@ -117,6 +117,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dmg: 10
   lanzada: 0
+  source: {fileID: 0}
+  clip: {fileID: 8300000, guid: 8b9f6ecba5c813a4590817f852cfbba7, type: 3}
+  volume: 0.3
+  loop: 0
 --- !u!50 &5393186574845172771
 Rigidbody2D:
   serializedVersion: 4

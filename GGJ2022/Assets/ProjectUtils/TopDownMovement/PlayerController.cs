@@ -101,7 +101,12 @@ using UnityEngine;
         
         protected override void Death()
         {
-            animator.Play("Dead");
+        PlayerActions playerActions = GetComponent<PlayerActions>();
+        playerActions.source.clip = playerActions.clipScream;
+        playerActions.source.loop = false;
+        playerActions.source.volume = playerActions.volumeDeath;
+        playerActions.source.Play();
+        animator.Play("Dead");
         }
 
         
