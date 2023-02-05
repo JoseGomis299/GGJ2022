@@ -22,11 +22,15 @@ namespace ProjectUtils.TopDown2D
         _lastImmune = Time.time;
         health -= dmg.damageAmount;
         pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
-
+        
         if (health <= 0)
         {
           health = 0;
           Death();
+        }
+        else
+        {
+                    GetComponent<Animator>().Play("Pain");
         }
 
         StartCoroutine(ImmuneDisplay());

@@ -12,6 +12,9 @@ using UnityEngine;
         public bool isReallyAtacking;
         private Animator animator;
         private PlayerActions playerActions;
+
+    public bool recover = true;
+
         private void Awake()
         {
             _lastValidDirection = Vector3.right;
@@ -21,6 +24,13 @@ using UnityEngine;
 
         public void Update()
         {
+        
+            if (grounded  && recover)
+            {
+                animator.SetBool("isJumping", false);
+                recover = false;
+            }
+
             float x = Input.GetAxisRaw("Horizontal");
             _direction = new Vector3(x, 0, 0);
 
@@ -44,9 +54,8 @@ using UnityEngine;
                 Jump(jumpForce);
             }
 
-            if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
             {
-                ReceiveDamage(new Damage(Vector3.zero, 10,0));
 
             }
 
@@ -64,15 +73,30 @@ using UnityEngine;
                 Debug.Log("VAR");
                 _direction = new Vector3(0, 0, 0);
             }
+
+        if (
+          climbingDirection != 0)
+        {
+            GetComponent<Animator>().SetBool("isWallJumping",true);
         }
+        else
+        {
+            GetComponent<Animator>().SetBool("isWallJumping", false);
+
+        }
+    }
         private void FixedUpdate()
         {
             UpdateMotor(_direction);
+
         }
 
+        
         protected override void Death()
         {
-            transform.position = CheckPointController.Instance.GetCheckPointPosition();
+            animator.Play("Dead");
         }
+
+        
     }
 

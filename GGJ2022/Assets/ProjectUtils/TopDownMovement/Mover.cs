@@ -46,6 +46,7 @@ namespace ProjectUtils.TopDown2D
 
         protected void UpdateMotor(Vector3 input)
         {
+          
             _moveDelta = new Vector3(input.x * speed, _rb.velocity.y, 0);
 
             if (_moveDelta.x < 0)
@@ -131,9 +132,16 @@ namespace ProjectUtils.TopDown2D
                 return;
             }
             _rb.velocity = new Vector2(climbingDirection != 0 ? -climbingDirection*force : _rb.velocity.x, force);
+            GetComponent<Animator>().SetBool("isJumping", true);
+            StartCoroutine(recoverTime());
             _coyoteTime = float.MinValue;
         }
 
+        private IEnumerator recoverTime()
+        {
+            yield return new WaitForSeconds(0.1f);
+            GetComponent<PlayerController>().recover = true;
+        }
 
 
         private void OnDrawGizmos()

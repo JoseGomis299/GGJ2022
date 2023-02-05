@@ -8,7 +8,7 @@ public class Ball : MonoBehaviour
 {
     private Rigidbody2D rigidbody2D;
     [SerializeField] private float dmg;
-    public bool lanzada;
+    public bool lanzada = false;
 
     private void Start()
     {
