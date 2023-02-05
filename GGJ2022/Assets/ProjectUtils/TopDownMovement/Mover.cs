@@ -134,8 +134,6 @@ namespace ProjectUtils.TopDown2D
             _coyoteTime = float.MinValue;
         }
 
-
-
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
