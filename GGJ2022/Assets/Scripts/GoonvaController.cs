@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using ProjectUtils.Attacking;
 using ProjectUtils.TopDown2D;
 using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
+
 
 public class GoonvaController : Mover
 {
@@ -12,21 +14,18 @@ public class GoonvaController : Mover
     private Vector3 direction;
     
     [SerializeField]
-    private GameObject palodeciegodcha;
-    private BoxCollider2D palodeciegodchaCollider;
-    [SerializeField]
-    private GameObject palodeciegoizq;
-    private BoxCollider2D palodeciegodizqCollider;
+    private GameObject palodeciego;
+    private BoxCollider2D palodeciegoCollider;
+
+
     private bool aux;
 
 
     // Start is called before the first frame update
     void Awake()
     {
-        palodeciegodcha = transform.GetChild(0).gameObject;
-        palodeciegodchaCollider = palodeciegodcha.GetComponent<BoxCollider2D>();
-        palodeciegoizq = transform.GetChild(1).gameObject;
-        palodeciegodizqCollider = palodeciegoizq.GetComponent<BoxCollider2D>();
+        palodeciego = transform.GetChild(0).gameObject;
+        palodeciegoCollider = palodeciego.GetComponent<BoxCollider2D>();
 
 
 
@@ -51,15 +50,26 @@ public class GoonvaController : Mover
         }
 
     }
-    
-    
-    
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag.Equals("Player"))
+        {
+            Debug.Log("Nena tiene el pelo enfarrangao, aparta.");
+            IDamageable pc = col.GetComponent<IDamageable>();
+            if (pc != null && col.CompareTag("Player"))
+            {
+                pc.ReceiveDamage(new Damage(transform.position, 2, 10));
+            }
+        }
+    }
+
 
     // Update is called once per frame
     void FixedUpdate()
     {
 
-         UpdateMotor(direction);
+        UpdateMotor(direction);
        
     }
 }

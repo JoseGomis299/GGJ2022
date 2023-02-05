@@ -7,8 +7,8 @@ namespace ProjectUtils.TopDown2D
   public class Fighter : MonoBehaviour, IDamageable
   {
     [Header("Fighting")]
-    public float health = 10;
-    public float maxHealth = 10;
+    public int health = 10;
+    public int maxHealth = 10;
 
     [SerializeField] private float immuneTime = 1;
     private float _lastImmune;
@@ -55,7 +55,7 @@ namespace ProjectUtils.TopDown2D
 
     protected virtual void Death()
     {
-      gameObject.SetActive(false);
+      Destroy(gameObject);
     }
   }
 }
