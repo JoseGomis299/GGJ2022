@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using ProjectUtils.Attacking;
+using ProjectUtils.ObjectPooling;
 using UnityEngine;
 
 namespace ProjectUtils.TopDown2D
@@ -12,6 +14,7 @@ namespace ProjectUtils.TopDown2D
         [SerializeField] private LayerMask collisionLayer;
         [SerializeField] protected bool canClimb;
         [SerializeField] protected bool canDash;
+        [SerializeField] private GameObject dashEcho;
         private Vector3 _moveDelta;
         private Rigidbody2D _rb;
         private RaycastHit2D _hit;
@@ -106,6 +109,17 @@ namespace ProjectUtils.TopDown2D
             else
             {
                 dashDirection = new Vector3(transform.localScale.x, 0, 0) * dashForce;
+            }
+
+            if (dashEcho != null) StartCoroutine(dashDisplay());
+        }
+
+        private IEnumerator dashDisplay()
+        {
+            while (Mathf.Abs(dashDirection.x) > 1f)
+            {
+                ObjectPool.Instance.InstantiateFromPool(dashEcho, transform.position, Quaternion.identity, true);
+                yield return new WaitForSeconds(0.01f);
             }
         }
 
