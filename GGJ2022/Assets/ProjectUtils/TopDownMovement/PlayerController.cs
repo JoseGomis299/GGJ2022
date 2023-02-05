@@ -2,8 +2,13 @@ using ProjectUtils.Attacking;
 using ProjectUtils.ObjectPooling;
 using ProjectUtils.TopDown2D;
 using UnityEngine;
+using UnityEngine.UI;
+
     public class PlayerController : Mover
     {
+
+        public Slider slider;
+        
         private Vector3 _direction;
         private Vector3 _lastValidDirection;
         [Header("Cooldown")]
