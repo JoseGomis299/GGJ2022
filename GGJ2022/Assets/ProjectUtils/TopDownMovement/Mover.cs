@@ -31,7 +31,7 @@ namespace ProjectUtils.TopDown2D
         private float _jumpBufferTime;
         public bool grounded;
         
-        private CapsuleCollider2D _capsuleCollider;
+        protected CapsuleCollider2D capsuleCollider;
         protected float climbingDirection;
 
         protected void Start()
@@ -39,7 +39,7 @@ namespace ProjectUtils.TopDown2D
             if (TryGetComponent(out MeleeAttack meleeAttack)) this.meleeAttack = meleeAttack;
             if (TryGetComponent(out RangedAttack rangedAttack)) this.rangedAttack = rangedAttack;
 
-            _capsuleCollider = gameObject.GetComponent<CapsuleCollider2D>();
+            capsuleCollider = gameObject.GetComponent<CapsuleCollider2D>();
             rb = GetComponent<Rigidbody2D>();
             _jumpBufferTime = float.MinValue;
         }
@@ -65,7 +65,7 @@ namespace ProjectUtils.TopDown2D
             dashDirection = Vector3.Lerp(dashDirection, Vector3.zero, Time.fixedDeltaTime / 0.075f);
 
             //Check if grounded
-            if (Physics2D.CapsuleCast(new Vector2(transform.position.x,transform.position.y+_capsuleCollider.offset.y), _capsuleCollider.size,_capsuleCollider.direction,0, Vector2.down, 0.1f, collisionLayer) )
+            if (Physics2D.CapsuleCast(new Vector2(transform.position.x,transform.position.y+capsuleCollider.offset.y), capsuleCollider.size,capsuleCollider.direction,0, Vector2.down, 0.1f, collisionLayer) )
             {
                 grounded = true;
                 if (rb.velocity.y <= 0) _coyoteTime = Time.time;

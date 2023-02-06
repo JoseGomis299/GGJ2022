@@ -30,7 +30,7 @@ namespace ProjectUtils.TopDown2D
         }
         else
         {
-                    GetComponent<Animator>().Play("Pain");
+          if(PlayerActions.Instance.objGrabbed == null)GetComponent<Animator>().Play("Pain");
         }
 
         StartCoroutine(ImmuneDisplay());

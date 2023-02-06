@@ -37,11 +37,12 @@ public class PlayerActions : MonoBehaviour
     public float volumeDeath = 1;
     public float volumeHit = 1;
 
-
+    public static PlayerActions Instance;
     private void Start()
     {
         anim = GetComponent<Animator>();
         trajectory = GetComponent<Trajectory>();
+        Instance = this;
     }
 
     private void Update()
@@ -87,7 +88,7 @@ public class PlayerActions : MonoBehaviour
         {
             
             IDamageable rival = enemy.gameObject.GetComponent<IDamageable>();
-            rival.ReceiveDamage(new Damage(transform.position, slashList[slashNum].Damage, 0));
+            rival.ReceiveDamage(new Damage(transform.position, slashList[slashNum].Damage, 15));
             hitEnemy = true;
         }
         anim.Play(slashName);

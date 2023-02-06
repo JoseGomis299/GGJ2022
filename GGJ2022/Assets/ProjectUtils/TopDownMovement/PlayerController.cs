@@ -23,7 +23,7 @@ using UnityEngine.UI;
         
         private void Awake()
         {
-           //if(healthBar == null) healthBar.SetMaxHealth(maxHealth/maxHealth);
+           if(healthBar != null) healthBar.SetMaxHealth(maxHealth/maxHealth);
 
             if (Instance == null) Instance = this;
             _lastValidDirection = Vector3.right;
@@ -34,7 +34,7 @@ using UnityEngine.UI;
         public void Update()
         {
 
-            //healthBar.SetHealth(health/maxHealth);
+            healthBar.SetHealth(health/maxHealth);
             
             if (grounded  && recover)
             {
@@ -54,7 +54,7 @@ using UnityEngine.UI;
 
 
 
-            if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown)
+            if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - _lastDashTime >= dashCoolDown && canDash)
             {
             PlayerActions playerActions = GetComponent<PlayerActions>();
             playerActions.source.clip = playerActions.clipDash;
@@ -68,19 +68,6 @@ using UnityEngine.UI;
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Jump(jumpForce);
-            }
-
-        if (Input.GetMouseButtonDown(0))
-            {
-
-            }
-
-            if (Input.GetMouseButtonDown(1))
-            {
-                if (meleeAttack != null)
-                {
-                    meleeAttack.AttackCircle(_lastValidDirection, 30, 30, gameObject.GetInstanceID());
-                }
             }
 
             if(playerActions == null) return;
@@ -106,7 +93,6 @@ using UnityEngine.UI;
             UpdateMotor(_direction);
 
         }
-
         
         protected override void Death()
         {

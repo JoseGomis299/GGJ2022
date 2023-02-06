@@ -10,18 +10,18 @@ public class CheckPoint : MonoBehaviour
     {
         if (!reached)
         {
-            RaycastHit2D hit1 = Physics2D.Raycast(transform.position, Vector2.down);
-            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.up);
+            RaycastHit2D down = Physics2D.Raycast(transform.position, Vector2.down);
+            RaycastHit2D up = Physics2D.Raycast(transform.position, Vector2.up);
 
-            if (hit1.collider != null && hit1.collider.CompareTag("Player"))
+            if (down.collider != null && down.collider.CompareTag("Player"))
             {
                 reached = true;
-                return;
+                Debug.Log(transform.name);
             }
-            if (hit2.collider != null && hit1.collider.CompareTag("Player"))
+            if (up.collider != null && up.collider.CompareTag("Player"))
             {
                 reached = true;
-                return;
+                Debug.Log(transform.name);
             }
         }
     }

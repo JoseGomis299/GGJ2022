@@ -13,22 +13,11 @@ public class GoonvaController : Mover
     private bool startDirection; //TRUE IZQUIERDA, FALSE DERECHA
     private Vector3 direction;
     
-    [SerializeField]
-    private GameObject palodeciego;
-    private BoxCollider2D palodeciegoCollider;
-
-
     private bool aux;
-
 
     // Start is called before the first frame update
     void Awake()
     {
-        palodeciego = transform.GetChild(0).gameObject;
-        palodeciegoCollider = palodeciego.GetComponent<BoxCollider2D>();
-
-
-
         startDirection = (Random.value > 0.5f);
         if (startDirection)
         {
@@ -39,27 +28,16 @@ public class GoonvaController : Mover
             direction = Vector3.left;
         }
     }
-
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.tag.Equals("Ground"))
-        {
-            Debug.Log("Nene que te caes");
-            direction *= -1;
-        }
-
-    }
+    
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag.Equals("Player"))
         {
-            Debug.Log("Nena tiene el pelo enfarrangao, aparta.");
             IDamageable pc = col.GetComponent<IDamageable>();
             if (pc != null && col.CompareTag("Player"))
             {
-                pc.ReceiveDamage(new Damage(transform.position, 2, 10));
+                pc.ReceiveDamage(new Damage(transform.position, 2, 20f));
             }
         }
     }
@@ -69,7 +47,29 @@ public class GoonvaController : Mover
     void FixedUpdate()
     {
 
-         UpdateMotor(direction);
-       
+        RaycastHit2D down = Physics2D.Raycast(new Vector2(transform.position.x + transform.localScale.x / 2, transform.position.y), Vector2.down, capsuleCollider.size.y/2 + 0.3f);
+        RaycastHit2D right = Physics2D.Raycast(transform.position, Vector2.right*transform.localScale.x, capsuleCollider.size.x/2 + 0.1f);
+
+        if (!down)
+        {
+            direction *= -1;
+
+        }
+        
+        if(right && !right.collider.CompareTag("Player"))
+        {
+            direction *= -1;
+        }
+        
+
+        UpdateMotor(direction);
+    }
+
+    private void OnDrawGizmos()
+    {
+        if(capsuleCollider == null) return;
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, new Vector2(transform.position.x + ((capsuleCollider.size.x/2) + 0.1f)*transform.localScale.x, transform.position.y));
+        Gizmos.DrawLine(new Vector2(transform.position.x + transform.localScale.x / 2, transform.position.y), new Vector2(transform.position.x + transform.localScale.x / 2, transform.position.y - (capsuleCollider.size.y/2+0.3f)));
     }
 }

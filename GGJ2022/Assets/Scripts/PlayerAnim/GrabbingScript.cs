@@ -52,6 +52,7 @@ public class GrabbingScript : StateMachineBehaviour
         //    instance.GrabOffset.transform.position.y, instance.GrabOffset.transform.position.z);
         //instance.objGrabbed.transform.localPosition = new Vector3(0,0,0);
     }
+    
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

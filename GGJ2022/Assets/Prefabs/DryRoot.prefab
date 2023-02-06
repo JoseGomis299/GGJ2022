@@ -244,3 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growDirection: {x: -1, y: 0, z: 0}
+  source: {fileID: 0}
+  clip: {fileID: 8300000, guid: 917781a60679f4141b498694777da4ed, type: 3}
+  volume: 1
+  loop: 0
